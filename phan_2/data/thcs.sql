@@ -1,406 +1,363 @@
 USE truonghoc;
-INSERT INTO cap VALUES ('TX', 'Giao duc thuong xuyen');
-INSERT INTO cap VALUES ('MN', 'Mam non');
-INSERT INTO cap VALUES ('TH', 'Tieu hoc');
-INSERT INTO cap VALUES ('CS', 'Trung hoc co so');
-INSERT INTO cap VALUES ('PT', 'Trung hoc pho thong');
-INSERT INTO lt VALUES ('XXXXXX', 'nan');
-INSERT INTO lt VALUES ('TTGDTX', 'TT GDTX');
-INSERT INTO lt VALUES ('TTGDNN', 'TT GDNN');
-INSERT INTO lt VALUES ('GDNNTX', 'TT GDNN - GDTX');
-INSERT INTO lt VALUES ('PTHONG', 'Truong pho thong');
-INSERT INTO lt VALUES ('DANTOC', 'Dan toc ban tru');
-INSERT INTO lt VALUES ('NKTDTT', 'Nang khieu the duc the thao');
-INSERT INTO lt VALUES ('CHUYEN', 'Truong chuyen');
-INSERT INTO lh VALUES ('XXXXX', 'nan');
-INSERT INTO lh VALUES ('COLAP', 'Cong lap');
-INSERT INTO lh VALUES ('TTHUC', 'Tu thuc');
-INSERT INTO lh VALUES ('DALAP', 'Dan lap');
-INSERT INTO pgd VALUES ('XXX', 'nan');
-INSERT INTO pgd VALUES ('Q01', 'Phong GDDT quan 1');
-INSERT INTO pgd VALUES ('Q02', 'Phong GDDT quan 2');
-INSERT INTO pgd VALUES ('Q03', 'Phong GDDT quan 3');
-INSERT INTO pgd VALUES ('Q04', 'Phong GDDT quan 4');
-INSERT INTO pgd VALUES ('Q05', 'Phong GDDT quan 5');
-INSERT INTO pgd VALUES ('Q06', 'Phong GDDT quan 6');
-INSERT INTO pgd VALUES ('Q07', 'Phong GDDT quan 7');
-INSERT INTO pgd VALUES ('Q08', 'Phong GDDT quan 8');
-INSERT INTO pgd VALUES ('Q09', 'Phong GDDT quan 9');
-INSERT INTO pgd VALUES ('Q10', 'Phong GDDT quan 10');
-INSERT INTO pgd VALUES ('Q11', 'Phong GDDT quan 11');
-INSERT INTO pgd VALUES ('Q12', 'Phong GDDT quan 12');
-INSERT INTO pgd VALUES ('BTN', 'Phong GDDT Binh Tan');
-INSERT INTO pgd VALUES ('BTH', 'Phong GDDT Binh Thanh');
-INSERT INTO pgd VALUES ('TBI', 'Phong GDDT Tan Binh');
-INSERT INTO pgd VALUES ('BCH', 'Phong GDDT Binh Chanh');
-INSERT INTO pgd VALUES ('GVP', 'Phong GDDT Go Vap');
-INSERT INTO pgd VALUES ('PNH', 'Phong GDDT Phu Nhuan');
-INSERT INTO pgd VALUES ('CGI', 'Phong GDDT Can Gio');
-INSERT INTO pgd VALUES ('CCH', 'Phong GDDT Cu Chi');
-INSERT INTO pgd VALUES ('HMN', 'Phong GDDT Hoc Mon');
-INSERT INTO pgd VALUES ('NHB', 'Phong GDDT Nha Be');
-INSERT INTO pgd VALUES ('TPH', 'Phong GDDT Tan Phu');
-INSERT INTO pgd VALUES ('TDC', 'Phong GDDT Thu Duc');
-INSERT INTO ds_truong VALUES ('79000707', 'Pho thong Nang khieu the thao Olympic', 'Dai hoc The duc the thao TP. Ho Chi Minh
-Khu pho 6 - phuong Linh Trung - Quan Thu Duc - TP. Ho Chi Minh', 'Cong lap', 'Nang khieu the duc the thao', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000767', 'Tieu hoc THCS va THPT Quoc Van Sai Gon', '300 Hoa Binh', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000774', 'TH - THCS - THPT Chu Van An', 'So 7 Duong So 1 Khu Pho 1', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000791', 'Trung hoc co so va trung hoc pho thong Phung Hung', '14A Duong so 1 Phuong 16 Quan Go vap TP Ho Chi Minh', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000799', 'THCS - THPT Tran Cao Van', '126 To Hieu', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('790007A4', 'THCS va THPT Nam Viet', '25 21/1-3 23/7-9 Duong Duc Hien', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('790007B4', 'THCS va THPT Hai Ba Trung', '51/4 Nguyen Thi Nho', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('790007B9', 'Tieu hoc THCS va THPT Mua Xuan', '92 Nguyen Huu Canh phuong 22 Quan Binh Thanh', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000809', 'THCS va THPT Dang Khoa', '571 Co Bac', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000810', 'THCS va THPT Hong Ha', '170 Quang Trung', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000811', 'TH THCS THPT Tue Duc (2)', '249/108 Tan Thoi Nhat 17', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000812', 'THCS va THPT Nguyen Binh Khiem', '140 Ly Chinh Thang', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000813', 'Tieu hoc THCS va THPT Ngo Thoi Nhiem', '65D Ho Ba Phan', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000814', 'THCSTHPT An Dong', '91 Nguyen Chi Thanh', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000815', 'THCS THPT  Ngoi Sao', 'Duong so 18 Khu dan cu An Lac', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000816', 'THCS-THPT Phan Boi Chau', 'nan', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000818', 'TH - THCS - THPT VAN HANH', '781e Le Hong Phong P12 Q10', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000820', 'THPT Nam Sai Gon', 'Khu A Nam Sai Gon', 'Cong lap', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000822', 'THCS-THPT Hong Duc', 'So 8Duong Ho Dac DiPhuong Tay ThanhQuan Tan Phu TP Ho Chi Minh', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000824', 'THCS va THPT Bac Son', '338/24 Nguyen Van Qua P. Dong Hung Thuan Quan 12', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000825', 'THCS va THPT Pham Ngu Lao', '69/11 Pham Van Chieu P14 Go Vap', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000826', 'THCS va THPT Bach Dang', '53/1 Phan Van Hon', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000828', 'TH THCS va THPT Quoc Te', '305 Nguyen Trong Tuyen Phuong 10 Quan Phu Nhuan', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000829', 'THCS va THPT  Viet Thanh', '261 Cong Hoa', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000830', 'THCS va THPT Tri Duc', '1333A Thoai Ngoc Hau', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000831', 'THCS va THPT Thai Binh', '10 Truong Hoang Thanh', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000832', 'TH-THCS-THPT Thanh Binh', '192/12 Nguyen Thai Binh', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000834', 'THCS va THPT Nhan Van', '17 Son Ky', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000835', 'THCS - THPT Nguyen Khuyen', '136 Cong Hoa', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000836', 'TH THCS va THPT Truong Vinh Ky', 'nan', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000838', 'THCS THPT Phan Chau Trinh', 'So 12 Duong 23', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000841', 'THCS - THPT Duy Tan', '106 Nguyen Gian Thanh', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000846', 'THCS va THPT Chau A Thai Binh Duong', '33 C D E Nguyen Binh Khiem', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000848', 'Tieu hoc THCS va THPT Viet My', 'nan', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000849', 'THCS va THPT Duc Tri', '39/23 Bui Van Ba khu pho 2', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000850', 'THCS va THPT Dinh Thien Ly', 'Lo 01 Khu A Nam Sai Gon', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000851', 'THCS - THPT Sao Viet', '650q/15 Nguyen Huu Tho', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000852', 'TH THCS va THPT Nam My', 'nan', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000853', 'Trung hoc thuc hanh Sai Gon', '220 Tan Binh Trong', 'Cong lap', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000854', 'THCS - THPT Lac Hong', '2276/5 Quoc lo 1A', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000855', 'THCS va THPT Quang Trung Nguyen Hue', '223 Nguyen Tri Phuong', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000856', 'THCS va THPT Khai Minh', '410 Tan Ky Tan Quy', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000857', 'THCS  VA THPT NGOC VIEN DONG', 'nan', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000858', 'Tieu hoc THCS va THPT Tan Phu', '519 Kenh Tan Hoa', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000859', 'THCS - THPT Bac Ai', '187 Go Cam Dem P.10 Q.Tan Binh TP.HCM', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000860', 'THCS va THPT Suong Nguyet Anh', '249 Hoa Hao', 'Cong lap', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000861', 'THCS va THPT Dien Hong', '11 Thanh Thai  phuong 14 quan 10', 'Cong lap', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000865', 'THCS va THPT Hoa Lu', '201 Phan Van Hon', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000866', 'THCS va THPT Dao Duy Anh', '355 Nguyen Van Luong', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000868', 'THCS va THPT DINH TIEN HOANG', '85 Che Lan Vien', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000869', 'THPT Luong The Vinh', '131 Co Bac', 'Cong lap', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000871', 'THPT Nang Khieu TDTT', '43 Dien Bien Phu', 'Cong lap', 'Nang khieu the duc the thao', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000872', 'THCS va THPT Viet Anh', '269A Nguyen Trong Tuyen P10 Phu Nhuan', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000873', 'THCS va THPT Hoa Sen', '26 Phan Chu Trinh', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000874', 'Tieu hoc THCS va THPT Vinschool', 'Toa CC3 khu do thi Vinhomes Central Park 720A Dien Bien Phu', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000876', 'THCS va THPT Thanh An', 'nan', 'Cong lap', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000888', 'Tieu hoc THCS va THPT Le Thanh Tong', 'nan', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000C01', 'PTDL Hermann Gmeiner', '697 Quang Trung', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000C03', 'Tieu hoc THCS va THPT Viet Uc', '594 Ba Thang Hai - phuong 14 - Quan 10 - Tp. HCM', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000C04', 'THCS Song ngu Quoc te Horizon', '6-6A-8 duong so 44', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000C05', 'Tieu hoc THCS va THPT Quoc te Canada', 'So 86 Duong 23', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000C06', 'TiH - THCS - THPT QUOC TE BAC MY', '1 Duong 5A Kdc Trung Son', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000C07', 'Tieu hoc THCS va THPT Thai Binh Duong', '125 Bach Dang', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000C09', 'TH THCS VA THPT Nguyen Tri Phuong', '61a Duong 30', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000C10', 'Tieu hoc THCS va THPT Anh Quoc', 'nan', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000C11', 'Tieu hoc THCS va THPT Emasi Nam Long', 'nan', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000C12', 'Tieu hoc THCS va THPT My Viet', '95 Phan Van Hon-Phuong Tan Thoi Nhat-Quan 12 - Thanh Pho Ho Chi Minh', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000C13', 'Tieu hoc THCS va THPT Emasi Van Phuc', 'nan', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000C15', 'Tieu hoc THCS va THPT Hoang Gia', 'nan', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000C19', 'Tieu hoc THCS va THPT Albert Einstein', 'Khu Dan Cu 13c dai lo Nguyen Van Linh xa Phong Phu huyen Binh Chanh TP Ho Chi Minh', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000F02', 'THPT chuyen Tran Dai Nghia', '53 Nguyen Du', 'Cong lap', 'Truong chuyen', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79000F03', 'THPT Chuyen Nang khieu TDTT Nguyen Thi Dinh', '215 Duong Hoang Ngan', 'Cong lap', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('7900QT01', 'Tieu hoc THCS va THPT Quoc te Khai Sang', 'nan', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('7900QT02', 'Truong Quoc te Viet Nam - Phan Lan', 'nan', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('7900QT2', 'Truong Quoc te Viet Nam - Phan Lan', 'nan', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79760419', 'Tieu hoc THCS  va THPT Quoc te A Chau', 'So 41/3-41/4 Bis Tran Nhat Duat', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79767601', 'Tieu hoc THCS va THPT Hoa Binh', '69 Trinh Dinh Thao', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79770601', 'TiH - THCS - THPT Tay Uc', '157 Ly Chinh Thang', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79770702', 'Tieu hoc THCS va THPT Uc Chau', 'nan', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79777418', 'Tieu hoc THCS va THPT Ngoi Sao Nho', '10 Duong so 22 Phuong Binh Tri Dong B Quan Binh Tan', 'Tu thuc', 'Truong pho thong', 'nan', 'CS')
-;INSERT INTO ds_truong VALUES ('79760501', 'THCS Chu Van An', '115 Cong Quynh', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 1', 'CS')
-;INSERT INTO ds_truong VALUES ('79760502', 'THCS Tran Van On', '161B Nguyen Van Thu', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 1', 'CS')
-;INSERT INTO ds_truong VALUES ('79760503', 'THCS Minh Duc', '75 Nguyen Thai Hoc', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 1', 'CS')
-;INSERT INTO ds_truong VALUES ('79760504', 'THCS Nguyen Du Q1', '139 Nguyen Du', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 1', 'CS')
-;INSERT INTO ds_truong VALUES ('79760505', 'THCS Van Lang', '51 Tran Quy Khach', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 1', 'CS')
-;INSERT INTO ds_truong VALUES ('79760506', 'THCS Vo Truong Toan', '11 Nguyen Binh Khiem', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 1', 'CS')
-;INSERT INTO ds_truong VALUES ('79760507', 'THCS Duc Tri', '273 Nguyen Trai', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 1', 'CS')
-;INSERT INTO ds_truong VALUES ('79760508', 'THCS Dong Khoi', '11 Phan Van Truong', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 1', 'CS')
-;INSERT INTO ds_truong VALUES ('79760509', 'THCS Huynh Khuong Ninh', '61 Huynh Khuong Ninh', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 1', 'CS')
-;INSERT INTO ds_truong VALUES ('79761501', 'THCS An Phu Dong', '2688/1A Khu Pho 1', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 12', 'CS')
-;INSERT INTO ds_truong VALUES ('79761502', 'THCS Nguyen An Ninh', '2384/36 Kp5', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 12', 'CS')
-;INSERT INTO ds_truong VALUES ('79761503', 'THCS Phan Boi Chau', 'Duong DHT 30 Khu pho 4 Phuong Dong Hung Thuan Q12 TP.HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 12', 'CS')
-;INSERT INTO ds_truong VALUES ('79761504', 'THCS Luong The Vinh', '301/34 Kp3', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 12', 'CS')
-;INSERT INTO ds_truong VALUES ('79761505', 'THCS Nguyen Anh Thu', '224 Phan Van Hon Khu Pho 6 P.Tan Thoi Nhat Q12TPHCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 12', 'CS')
-;INSERT INTO ds_truong VALUES ('79761506', 'THCS Nguyen Vinh Nghiep', '51/5B Kp2', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 12', 'CS')
-;INSERT INTO ds_truong VALUES ('79761507', 'THCS Nguyen Hien', 'Khu Pho 3a', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 12', 'CS')
-;INSERT INTO ds_truong VALUES ('79761508', 'THCS Tran Quang Khai', '641 Kp8', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 12', 'CS')
-;INSERT INTO ds_truong VALUES ('79761509', 'THCS Nguyen Hue', '2K Nguyen Thi Dang Khu pho 6', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 12', 'CS')
-;INSERT INTO ds_truong VALUES ('79761510', 'THCS Tran Hung Dao', 'Khu Pho 1', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 12', 'CS')
-;INSERT INTO ds_truong VALUES ('79761511', 'THCS Nguyen Trung Truc', '364 Duong TA28  Kp 5 phuong Thoi An quan 12', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 12', 'CS')
-;INSERT INTO ds_truong VALUES ('79761512', 'THCS Nguyen Chi Thanh', 'Khu pho 3', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 12', 'CS')
-;INSERT INTO ds_truong VALUES ('79761513', 'THCS Ha Huy Tap', 'Khu pho 5 phuong Dong Hung Thuan Q12 TP.HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 12', 'CS')
-;INSERT INTO ds_truong VALUES ('79761514', 'THCS Tran Phu', 'nan', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 12', 'CS')
-;INSERT INTO ds_truong VALUES ('79762501', 'THCS Le Quy Don', '234 Vo Van Ngan', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS')
-;INSERT INTO ds_truong VALUES ('79762502', 'THCS Truong Van Ngu', '49 Vo Van Ngan KP2', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS')
-;INSERT INTO ds_truong VALUES ('79762503', 'THCS Ngo Chi Quoc', 'So 23 Duong 27 Kp9', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS')
-;INSERT INTO ds_truong VALUES ('79762504', 'THCS Hiep Binh', 'so 4 duong so 4 Kp6', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS')
-;INSERT INTO ds_truong VALUES ('79762505', 'THCS Thai Van Lung', '35 Phu Chau', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS')
-;INSERT INTO ds_truong VALUES ('79762506', 'THCS Tam Binh', 'So 2 Duong 10 Kp4', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS')
-;INSERT INTO ds_truong VALUES ('79762507', 'THCS Xuan Truong', '47 QL1K Kp2', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS')
-;INSERT INTO ds_truong VALUES ('79762508', 'THCS Linh Trung', 'so 5 Kp2', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS')
-;INSERT INTO ds_truong VALUES ('79762509', 'THCS Linh Dong', 'Kp4', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS')
-;INSERT INTO ds_truong VALUES ('79762510', 'THCS Binh Chieu', 'So 2 Kp3 duong Binh Chieu', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS')
-;INSERT INTO ds_truong VALUES ('79762511', 'THCS Binh Tho', '39 Thong Nhat', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS')
-;INSERT INTO ds_truong VALUES ('79762512', 'THCS Le Van Viet', '15 Nguyen  Ba Luat kp2 p.Binh Tho. q.Thu Duc TP.HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS')
-;INSERT INTO ds_truong VALUES ('79762514', 'THCS Nguyen Van Ba', '99/21 Duong 11 Kp4', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS')
-;INSERT INTO ds_truong VALUES ('79762515', 'THCS Truong Tho', '71/25 Duong 8 Khu Pho 2 Phuong Truong Tho Quan Thu Duc', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS')
-;INSERT INTO ds_truong VALUES ('79762516', 'THCS Duong Van Thi', 'nan', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS')
-;INSERT INTO ds_truong VALUES ('79763501', 'THCS Phuoc Binh', '02 Duong 22 Phuoc Binh', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 9', 'CS')
-;INSERT INTO ds_truong VALUES ('79763502', 'THCS Hung Binh', '819 Nguyen Xien KP Long Hoa P. Long Thanh My Q.9', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 9', 'CS')
-;INSERT INTO ds_truong VALUES ('79763503', 'THCS Hoa Lu', 'Duong Quang Trung', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 9', 'CS')
-;INSERT INTO ds_truong VALUES ('79763504', 'THCS Tran Quoc Toan', '381 duong Le Van Viet', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 9', 'CS')
-;INSERT INTO ds_truong VALUES ('79763505', 'THCS Long Truong', 'Nguyen Duy TrinhKhu pho Ong Nhieu', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 9', 'CS')
-;INSERT INTO ds_truong VALUES ('79763506', 'THCS Long Phuoc', '18 Duong 6 Kp Long Thuan', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 9', 'CS')
-;INSERT INTO ds_truong VALUES ('79763507', 'THCS Dang Tan Tai', 'Duong 128 KP4 Phuoc Long A', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 9', 'CS')
-;INSERT INTO ds_truong VALUES ('79763508', 'THCS Phu Huu', 'Khu pho 1 Phuong Phu Huu Q9 Tp.HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 9', 'CS')
-;INSERT INTO ds_truong VALUES ('79763509', 'THCS Tan Phu', '119 Nam Cao', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 9', 'CS')
-;INSERT INTO ds_truong VALUES ('79763510', 'THCS Truong Thanh', '3/1 duong 3 KP Phuoc Hiep', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 9', 'CS')
-;INSERT INTO ds_truong VALUES ('79763511', 'THCS Long Binh', '1080 Nguyen Xien KP.Ben Do P. Long Binh Quan 9', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 9', 'CS')
-;INSERT INTO ds_truong VALUES ('79763512', 'THCS Tang Nhon Phu B', 'Duong Dinh Hoi Khu pho 3 Phuong Tang Nhon Phu B Quan 9 HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 9', 'CS')
-;INSERT INTO ds_truong VALUES ('79763513', 'THCS Hiep Phu', 'nan', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 9', 'CS')
-;INSERT INTO ds_truong VALUES ('79764501', 'THCS Nguyen Van Troi', '112/24 Nguyen Thai Son', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS')
-;INSERT INTO ds_truong VALUES ('79764502', 'THCS Nguyen Du', '119 Thong Nhat', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS')
-;INSERT INTO ds_truong VALUES ('79764503', 'THCS Go Vap', '01 Nguyen Du', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS')
-;INSERT INTO ds_truong VALUES ('79764504', 'THCS Quang Trung', '387 Quang Trung Phuong 10 Quan Go Vap TPHCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS')
-;INSERT INTO ds_truong VALUES ('79764505', 'THCS Pham Van Chieu', 'So 4 Pham Van Chieu', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS')
-;INSERT INTO ds_truong VALUES ('79764507', 'THCS Phan Tay Ho', '18B/27 Thong Nhat', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS')
-;INSERT INTO ds_truong VALUES ('79764508', 'THCS An Nhon', '350/54/51 Le Duc Tho', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS')
-;INSERT INTO ds_truong VALUES ('79764509', 'THCS Nguyen Van Nghi', '111 Luong Ngoc Quyen', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS')
-;INSERT INTO ds_truong VALUES ('79764510', 'THCS Truong Son', '43 Nguyen Van Bao', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS')
-;INSERT INTO ds_truong VALUES ('79764511', 'THCS Thong Tay Hoi', '01 Quang Trung', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS')
-;INSERT INTO ds_truong VALUES ('79764512', 'THCS Ly Tu Trong', '578 Le Duc Tho', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS')
-;INSERT INTO ds_truong VALUES ('79764513', 'THCS Nguyen Trai', '1370 Le Duc Tho', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS')
-;INSERT INTO ds_truong VALUES ('79764514', 'THCS Tan Son', '162/27 Nguyen Duy Cung', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS')
-;INSERT INTO ds_truong VALUES ('79764515', 'THCS Huynh Van Nghe', '237/65 Pham Van Chieu', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS')
-;INSERT INTO ds_truong VALUES ('79764516', 'THCS Phan Van Tri', '468/2/2 Phan Van Tri Phuong 7 Go Vap', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS')
-;INSERT INTO ds_truong VALUES ('79765501', 'THCS Lam Son', '280 Bui Huu Nghia', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79765502', 'THCS Ha Huy Tap', 'So 7 Phan Dang Luu', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79765503', 'THCS Nguyen Van Be', '206 Nguyen Van Dau', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79765504', 'THCS Rang Dong', '17 Ngo Duc Ke p.12 QBinh Thanh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79765505', 'THCS Binh Loi Trung', '179 Duong Truc', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79765506', 'THCS Le Van Tam', '107F Chu Van An', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79765507', 'THCS Phu My', '120B Ngo Tat To', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79765508', 'THCS Cuu Long', '102 Ngo Tat To', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79765509', 'THCS Dong Da', '217 Duong D2 Phuong 25 Quan Binh Thanh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79765510', 'THCS Thanh Da', 'Canh Lo L Cu Xa Thanh Da', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79765511', 'THCS  Truong Cong Dinh', '131 Dinh Tien Hoang', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79765512', 'THCS Yen The', '399 Le Quang Dinh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79765513', 'THCS Dien Bien', '200 Dien Bien Phu', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79765514', 'THCS Cu Chinh Lan', '17/49 Thanh Da', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79765515', 'THCS Binh Quoi Tay', '376A Binh Quoi', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79766501', 'THCS Ngo Si Lien', '12 Pham Van Hai', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Binh', 'CS')
-;INSERT INTO ds_truong VALUES ('79766502', 'THCS Tran Van Dang', '27 Nghia Hoa', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Binh', 'CS')
-;INSERT INTO ds_truong VALUES ('79766503', 'THCS Nguyen Gia Thieu', '272 Ly Thuong Kiet', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Binh', 'CS')
-;INSERT INTO ds_truong VALUES ('79766504', 'THCS Quang Trung', '14-16 Tan Lap', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Binh', 'CS')
-;INSERT INTO ds_truong VALUES ('79766505', 'THCS Ly Thuong Kiet', '104 Thien Phuoc', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Binh', 'CS')
-;INSERT INTO ds_truong VALUES ('79766506', 'THCS Vo Van Tan', '261 Vo Thanh Trang', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Binh', 'CS')
-;INSERT INTO ds_truong VALUES ('79766507', 'THCS Hoang Hoa Tham', '135 Hoang Hoa Tham', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Binh', 'CS')
-;INSERT INTO ds_truong VALUES ('79766508', 'THCS Au Lac', '46 Hoang Viet phuong 4 quan Tan Binh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Binh', 'CS')
-;INSERT INTO ds_truong VALUES ('79766509', 'THCS Tan Binh', '873 Cach Mang Thang Tam', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Binh', 'CS')
-;INSERT INTO ds_truong VALUES ('79766510', 'THCS Pham Ngoc Thach', '17-19 Au Co', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Binh', 'CS')
-;INSERT INTO ds_truong VALUES ('79766511', 'THCS Ngo Quyen', '97 Truong Chinh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Binh', 'CS')
-;INSERT INTO ds_truong VALUES ('79766512', 'THCS Truong Chinh', '162t Truong Chinh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Binh', 'CS')
-;INSERT INTO ds_truong VALUES ('79766513', 'THCS Tran Van Quang', 'Ni su Huynh Lien Phuong 10 Quan Tan Binh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Binh', 'CS')
-;INSERT INTO ds_truong VALUES ('79767418', 'THCS Hong Ngoc', '58/4 Luy Ban Bich', 'Tu thuc', 'Truong pho thong', 'Phong GDDT Tan Phu', 'CS')
-;INSERT INTO ds_truong VALUES ('79767501', 'THCS Dang Tran Con', '15/29 Cau Xeo', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Phu', 'CS')
-;INSERT INTO ds_truong VALUES ('79767502', 'THCS Le Loi', '47/22a Duong S11', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Phu', 'CS')
-;INSERT INTO ds_truong VALUES ('79767503', 'THCS Vo Thanh Trang', '218 Tan Quy', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Phu', 'CS')
-;INSERT INTO ds_truong VALUES ('79767504', 'THCS Dong Khoi', '20 Thach Lam', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Phu', 'CS')
-;INSERT INTO ds_truong VALUES ('79767505', 'THCS Hung Vuong', '20f Luong Minh Nguyet', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Phu', 'CS')
-;INSERT INTO ds_truong VALUES ('79767506', 'THCS Le Anh Xuan', '211/53 Vuon Lai', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Phu', 'CS')
-;INSERT INTO ds_truong VALUES ('79767507', 'THCS Phan Boi Chau', '35 Doc Lap', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Phu', 'CS')
-;INSERT INTO ds_truong VALUES ('79767508', 'THCS Tan Thoi Hoa', '149/15 Ly Thanh Tong phuong Tan Thoi Hoa quan Tan Phu TP.HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Phu', 'CS')
-;INSERT INTO ds_truong VALUES ('79767509', 'THCS Thoai Ngoc Hau', '24 Huynh Van Chinh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Phu', 'CS')
-;INSERT INTO ds_truong VALUES ('79767510', 'THCS Tran Quang Khai', '94/3 Nguyen The Truyen', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Phu', 'CS')
-;INSERT INTO ds_truong VALUES ('79767511', 'THCS Nguyen Hue', '289 Thanh Cong', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Phu', 'CS')
-;INSERT INTO ds_truong VALUES ('79767512', 'THCS Hoang Dieu', 'nan', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Phu', 'CS')
-;INSERT INTO ds_truong VALUES ('79767513', 'THCS Ton That Tung', '3 duong D2 phuong Son Ky quan Tan Phu TP HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Phu', 'CS')
-;INSERT INTO ds_truong VALUES ('79768501', 'THCS Cau Kieu', '244 Phan Dinh Phung', 'Cong lap', 'Truong pho thong', 'Phong GDDT Phu Nhuan', 'CS')
-;INSERT INTO ds_truong VALUES ('79768502', 'TRUONG THCS Doc Lap', '94 Thich Quang Duc', 'Cong lap', 'Truong pho thong', 'Phong GDDT Phu Nhuan', 'CS')
-;INSERT INTO ds_truong VALUES ('79768503', 'THCS Ngo Tat To', '17 Dang Van Ngu', 'Cong lap', 'Truong pho thong', 'Phong GDDT Phu Nhuan', 'CS')
-;INSERT INTO ds_truong VALUES ('79768504', 'THCS Chau Van Liem', '93 Phan Dang Luu', 'Cong lap', 'Truong pho thong', 'Phong GDDT Phu Nhuan', 'CS')
-;INSERT INTO ds_truong VALUES ('79768506', 'THCS Dao Duy Anh', '14 Le Qui Don', 'Cong lap', 'Truong pho thong', 'Phong GDDT Phu Nhuan', 'CS')
-;INSERT INTO ds_truong VALUES ('79768507', 'THCS Tran Huy Lieu', '94 Nguyen Dinh Chieu', 'Cong lap', 'Truong pho thong', 'Phong GDDT Phu Nhuan', 'CS')
-;INSERT INTO ds_truong VALUES ('79769411', 'TH - THCS Tue Duc', '1/5 Bis Luong Dinh Cua', 'Tu thuc', 'Truong pho thong', 'Phong GDDT quan 2', 'CS')
-;INSERT INTO ds_truong VALUES ('79769501', 'THCS An Phu', '589C Khu pho 4', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 2', 'CS')
-;INSERT INTO ds_truong VALUES ('79769502', 'THCS Giong Ong To', '256B Nguyen Duy Trinh', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 2', 'CS')
-;INSERT INTO ds_truong VALUES ('79769503', 'THCS Nguyen Van Troi', '571 Nguyen Duy Trinh', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 2', 'CS')
-;INSERT INTO ds_truong VALUES ('79769504', 'THCS Thanh My Loi', '42 duong 5 Khu pho 2', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 2', 'CS')
-;INSERT INTO ds_truong VALUES ('79769506', 'THCS Luong Dinh Cua', 'So 2 Duong Le Hien Mai', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 2', 'CS')
-;INSERT INTO ds_truong VALUES ('79769507', 'THCS Binh An', '25 Duong 34 Kp2', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 2', 'CS')
-;INSERT INTO ds_truong VALUES ('79769508', 'THCS Nguyen Thi Dinh', 'So 2 Duong 7 Kp2', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 2', 'CS')
-;INSERT INTO ds_truong VALUES ('79769509', 'THCS Tran Quoc Toan', '218 Vu Tong Phan Phuong An Phu Quan 2', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 2', 'CS')
-;INSERT INTO ds_truong VALUES ('79769510', 'THCS Cat Lai', 'So 15 Duong 69 KP3 Phuong Cat Lai Quan 2', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 2', 'CS')
-;INSERT INTO ds_truong VALUES ('79770501', 'THCS Ban Co', '16 Duong So 3 C/x Do Thanh', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 3', 'CS')
-;INSERT INTO ds_truong VALUES ('79770502', 'THCS Colette', '10 Ho Xuan Huong Phuong 6 Quan 3', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 3', 'CS')
-;INSERT INTO ds_truong VALUES ('79770503', 'THCS Doan Thi Diem', '413/86 Le Van Sy', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 3', 'CS')
-;INSERT INTO ds_truong VALUES ('79770504', 'THCS Hai Ba Trung', '295 Hai Ba Trung', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 3', 'CS')
-;INSERT INTO ds_truong VALUES ('79770505', 'THCS Le loi', '282 Vo Thi Sau', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 3', 'CS')
-;INSERT INTO ds_truong VALUES ('79770506', 'THCS Le Quy Don', '9B Vo Van Tan', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 3', 'CS')
-;INSERT INTO ds_truong VALUES ('79770507', 'THCS Luong The Vinh', '474 CMT8', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 3', 'CS')
-;INSERT INTO ds_truong VALUES ('79770508', 'THCS Thang Long', '482-484 Nguyen Thi Minh Khai', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 3', 'CS')
-;INSERT INTO ds_truong VALUES ('79770509', 'THCS Bach Dang', '386/42 Le Van Sy', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 3', 'CS')
-;INSERT INTO ds_truong VALUES ('79770510', 'THCS Kien Thiet', '223/4 Nguyen Dinh Chieu', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 3', 'CS')
-;INSERT INTO ds_truong VALUES ('79770511', 'THCS Phan Sao Nam', '657 Dien Bien Phu', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 3', 'CS')
-;INSERT INTO ds_truong VALUES ('79771501', 'THCS Hoang Van Thu', '322 Nguyen Tri Phuong', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 10', 'CS')
-;INSERT INTO ds_truong VALUES ('79771502', 'THCS Nguyen Tri Phuong', '26 Nguyen Lam', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 10', 'CS')
-;INSERT INTO ds_truong VALUES ('79771503', 'THCS Nguyen Van To', '332 - 334 To Hien Thanh', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 10', 'CS')
-;INSERT INTO ds_truong VALUES ('79771504', 'THCS Lac Hong', '436/4 Ba Thang Hai', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 10', 'CS')
-;INSERT INTO ds_truong VALUES ('79771505', 'THCS Tran Phu', '82 Cuu Long', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 10', 'CS')
-;INSERT INTO ds_truong VALUES ('79771507', 'THCS Cach Mang Thang Tam', '289 Cach Mang Thang 8', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 10', 'CS')
-;INSERT INTO ds_truong VALUES ('79772501', 'THCS Nguyen Van Phu', '161B/112 Lac Long Quan', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 11', 'CS')
-;INSERT INTO ds_truong VALUES ('79772502', 'THCS Le Quy Don', '343D Lac Long Quan', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 11', 'CS')
-;INSERT INTO ds_truong VALUES ('79772503', 'THCS Nguyen Hue', '429/9 Lac Long Quan', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 11', 'CS')
-;INSERT INTO ds_truong VALUES ('79772504', 'THCS Nguyen Minh Hoang', '185/2 Ly Thuong Kiet', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 11', 'CS')
-;INSERT INTO ds_truong VALUES ('79772505', 'THCS Chu Van An', '01 Duong Dinh Nghe', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 11', 'CS')
-;INSERT INTO ds_truong VALUES ('79772506', 'THCS Le Anh Xuan', '40 duong 762 Hong Bang', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 11', 'CS')
-;INSERT INTO ds_truong VALUES ('79772507', 'THCS Phu Tho', '1122 duong 3/2', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 11', 'CS')
-;INSERT INTO ds_truong VALUES ('79772508', 'THCS Lu Gia', '52/1A cu xa Lu Gia', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 11', 'CS')
-;INSERT INTO ds_truong VALUES ('79772509', 'THCS Hau Giang', '8 Lo Sieu', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 11', 'CS')
-;INSERT INTO ds_truong VALUES ('79772511', 'THCS Viet My', '252 Lac Long Quan', 'Tu thuc', 'Truong pho thong', 'Phong GDDT quan 11', 'CS')
-;INSERT INTO ds_truong VALUES ('79773501', 'THCS Nguyen Hue', '42 Nguyen Khoai', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 4', 'CS')
-;INSERT INTO ds_truong VALUES ('79773502', 'THCS Quang Trung', '209 Duong 14', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 4', 'CS')
-;INSERT INTO ds_truong VALUES ('79773503', 'THCS Tang Bat Ho', '92 B/20 Bis Ton That Thuyet', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 4', 'CS')
-;INSERT INTO ds_truong VALUES ('79773504', 'THCS Van Don', '243 Hoang Dieu Phuong 8 Quan 4', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 4', 'CS')
-;INSERT INTO ds_truong VALUES ('79773506', 'THCS Chi Lang', '129/63A Nguyen Huu Hao', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 4', 'CS')
-;INSERT INTO ds_truong VALUES ('79773507', 'THCS Khanh Hoi', 'A75 Nguyen Than Hien', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 4', 'CS')
-;INSERT INTO ds_truong VALUES ('79774501', 'THCS Ba Dinh', '129 Phan Van Tri', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 5', 'CS')
-;INSERT INTO ds_truong VALUES ('79774502', 'Trung hoc co so Kim Dong', '503 Phan Van Tri', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 5', 'CS')
-;INSERT INTO ds_truong VALUES ('79774503', 'THCS Hong Bang', '132 Hong Bang', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 5', 'CS')
-;INSERT INTO ds_truong VALUES ('79774504', 'THCS Tran Boi Co', '266 Hai Thuong Lan Ong', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 5', 'CS')
-;INSERT INTO ds_truong VALUES ('79774505', 'THCS Ly Phong', '83 Nguyen Duy Duong', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 5', 'CS')
-;INSERT INTO ds_truong VALUES ('79774506', 'THCS Mach Kiem Hung', '712 Nguyen Trai', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 5', 'CS')
-;INSERT INTO ds_truong VALUES ('79774601', 'THCS Van Lang', '02-04 Tan Thanh', 'Tu thuc', 'Truong pho thong', 'Phong GDDT quan 5', 'CS')
-;INSERT INTO ds_truong VALUES ('79775421', 'TH - THCS QT My Uc(TH)', '62_62A Minh Phung', 'Tu thuc', 'Truong pho thong', 'Phong GDDT quan 6', 'CS')
-;INSERT INTO ds_truong VALUES ('79775501', 'THCS Nguyen Duc Canh', '242-minh Phung', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 6', 'CS')
-;INSERT INTO ds_truong VALUES ('79775502', 'THCS Phu Dinh', '94bis Ly Chieu Hoang', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 6', 'CS')
-;INSERT INTO ds_truong VALUES ('79775503', 'THCS Hau Giang', '176/1A Hau Giang', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 6', 'CS')
-;INSERT INTO ds_truong VALUES ('79775504', 'THCS Pham Dinh Ho', '270 Gia Phu', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 6', 'CS')
-;INSERT INTO ds_truong VALUES ('79775505', 'THCS Doan Ket', '183A Tan Hoa Dong', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 6', 'CS')
-;INSERT INTO ds_truong VALUES ('79775506', 'THCS Nguyen Van Luong', '241/159 Nguyen Van Luong Phuong 11 Quan 6', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 6', 'CS')
-;INSERT INTO ds_truong VALUES ('79775507', 'Truong THCS Lam Son', '805a Hau Giang', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 6', 'CS')
-;INSERT INTO ds_truong VALUES ('79775508', 'THCS Binh Tay', '36A Binh Tay', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 6', 'CS')
-;INSERT INTO ds_truong VALUES ('79775509', 'THCS Van Than', '118B Van Than', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 6', 'CS')
-;INSERT INTO ds_truong VALUES ('79775510', 'THCS Hoang Le Kha', '383-391 Ben Phu Lam', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 6', 'CS')
-;INSERT INTO ds_truong VALUES ('79776501', 'THCS Duong Ba Trac', '134 Duong Ba Trac', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 8', 'CS')
-;INSERT INTO ds_truong VALUES ('79776502', 'THCS Khanh Binh', '314B Au Duong Lan Phuong 3 Quan 8', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 8', 'CS')
-;INSERT INTO ds_truong VALUES ('79776503', 'THCS Chanh Hung', '995 Pham The Hien', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 8', 'CS')
-;INSERT INTO ds_truong VALUES ('79776504', 'THCS Suong Nguyet Anh', '53 Bui Minh Truc', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 8', 'CS')
-;INSERT INTO ds_truong VALUES ('79776505', 'THCS Phan Dang Luu', '104 Bis Bui Minh Truc', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 8', 'CS')
-;INSERT INTO ds_truong VALUES ('79776506', 'THCS Tran Danh Ninh', '121 Ba Dinh', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 8', 'CS')
-;INSERT INTO ds_truong VALUES ('79776507', 'THCS Tung Thien Vuong', '381 Tung thien Vuong P12 Q8 TP. Ho Chi Minh', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 8', 'CS')
-;INSERT INTO ds_truong VALUES ('79776508', 'THCS Le Lai', '236 Binh Dong P.15', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 8', 'CS')
-;INSERT INTO ds_truong VALUES ('79776509', 'THCS Binh An', '2673 Pham The Hien', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 8', 'CS')
-;INSERT INTO ds_truong VALUES ('79776510', 'THCS Binh Dong', '58 Ben Phu Dinh', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 8', 'CS')
-;INSERT INTO ds_truong VALUES ('79776511', 'THCS Ly Thanh Tong', '481 Ba Dinh', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 8', 'CS')
-;INSERT INTO ds_truong VALUES ('79776512', 'THCS Phu Loi', 'so 56 duong Trinh Quang Nghi phuong 7 Quan 8 Thanh pho Ho Chi Minh', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 8', 'CS')
-;INSERT INTO ds_truong VALUES ('79777501', 'THCSCL An Lac', '4b Phung Ta Chu  KP7 phuong  An Lac A Quan Binh Tan thanh pho Ho Chi Minh.', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Tan', 'CS')
-;INSERT INTO ds_truong VALUES ('79777502', 'THCSCL Ho Van Long', '52 Ho Van Long Kp4', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Tan', 'CS')
-;INSERT INTO ds_truong VALUES ('79777503', 'THCSCL Binh Hung Hoa', '10/47 quoc lo 1A Kp3', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Tan', 'CS')
-;INSERT INTO ds_truong VALUES ('79777504', 'THCS Binh Tri Dong', 'B15/22c Huong Lo 2p Binh Tri Dongq Binh TanHCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Tan', 'CS')
-;INSERT INTO ds_truong VALUES ('79777505', 'THCSCL Binh Tan', '173/171 Duong An Duong Vuong KP4P.An LacTPHCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Tan', 'CS')
-;INSERT INTO ds_truong VALUES ('79777506', 'THCSCL Le Tan Be', 'Duong So 2d Khu Pho 3phuong An Lac quan Binh Tan Tp.HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Tan', 'CS')
-;INSERT INTO ds_truong VALUES ('79777507', 'THCSCL Tan Tao', '68 Ho Van Long KP4', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Tan', 'CS')
-;INSERT INTO ds_truong VALUES ('79777508', 'THCS Binh Tri Dong A', '160A Ma Lo Khu pho 2 Phuong Binh Tri Dong A Quan Binh Tan TP HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Tan', 'CS')
-;INSERT INTO ds_truong VALUES ('79777509', 'THCSCL Ly Thuong Kiet', '33 Truong Phuoc Phan', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Tan', 'CS')
-;INSERT INTO ds_truong VALUES ('79777510', 'THCSCL Tran Quoc Toan', '76 Kenh Nuoc Den KP5 Phuong Binh Hung Hoa A Q. Binh Tan TP.HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Tan', 'CS')
-;INSERT INTO ds_truong VALUES ('79777511', 'THCSCL Huynh Van Nghe', '89duong so 3 khu pho 4', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Tan', 'CS')
-;INSERT INTO ds_truong VALUES ('79777512', 'THCSCL Nguyen Trai', '140 duong so 18', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Tan', 'CS')
-;INSERT INTO ds_truong VALUES ('79777513', 'THCSCL Tan Tao A', '4449/8 Duong Nguyen Cuu Phu Phuong Tan Tao A Quan Binh Tan Tp. Ho Chi Minh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Tan', 'CS')
-;INSERT INTO ds_truong VALUES ('79777514', 'TH THCS va THPT Tri Tue Viet', '79 duong so 3 KDC Vinh Loc Binh Hung Hoa B.', 'Tu thuc', 'Dan toc ban tru', 'Phong GDDT Binh Tan', 'CS')
-;INSERT INTO ds_truong VALUES ('79778501', 'THCS Tran Quoc Tuan', '16/1 khu pho 1 Be Van Cam', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 7', 'CS')
-;INSERT INTO ds_truong VALUES ('79778502', 'THCS Huynh Tan Phat', '488 Huynh Tan Phat', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 7', 'CS')
-;INSERT INTO ds_truong VALUES ('79778503', 'THCS Nguyen Huu Tho', '62 Lam Van Ben Kp4 Phuong Tan KiengQuan 7TP Ho Chi Minh', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 7', 'CS')
-;INSERT INTO ds_truong VALUES ('79778504', 'THCS Nguyen Hien', '66 duong 1 Kp3', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 7', 'CS')
-;INSERT INTO ds_truong VALUES ('79778505', 'THCS Hoang Quoc Viet', 'D29 duong so 3 KDC Van Phat Hung', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 7', 'CS')
-;INSERT INTO ds_truong VALUES ('79778506', 'THCS Nguyen Thi Thap', '411/3 Nguyen Thi Thap', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 7', 'CS')
-;INSERT INTO ds_truong VALUES ('79778507', 'THCS Pham Huu Lau', 'Khu Tai dinh cu Phu My', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 7', 'CS')
-;INSERT INTO ds_truong VALUES ('79783501', 'THCS Tan Phu Trung', 'So 4 Duong 77 ap Dinh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS')
-;INSERT INTO ds_truong VALUES ('79783502', 'THCS Tan Thong Hoi', 'Duong 28 Ap Hau', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS')
-;INSERT INTO ds_truong VALUES ('79783503', 'THCS Tan Tien', 'So 41 duong 27  Ap Tan Tien', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS')
-;INSERT INTO ds_truong VALUES ('79783504', 'THCS Thi Tran', '629 QL22 KP5 Thi Tran Cu Chi Cu Chi', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS')
-;INSERT INTO ds_truong VALUES ('79783505', 'THCS Thi Tran 2', 'Le Vinh Huy Khu pho 7', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS')
-;INSERT INTO ds_truong VALUES ('79783506', 'THCS Phuoc Vinh An', 'Ap 5', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS')
-;INSERT INTO ds_truong VALUES ('79783507', 'THCS Phuoc Hiep', 'Ap Cay trom Xa Phuoc Hiep Huyen Cu Chi', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS')
-;INSERT INTO ds_truong VALUES ('79783508', 'THCS Phuoc Thanh', 'Tinh lo 7 Ap Phuoc An xa Phuoc Thanh huyen Cu Chi', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS')
-;INSERT INTO ds_truong VALUES ('79783509', 'THCS Nguyen Van Xo', 'Ap Binh Thuong 1 Thai My Cu Chi', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS')
-;INSERT INTO ds_truong VALUES ('79783510', 'THCS Trung Lap Ha', 'Ap Xom Moi Xa Trung Lap Ha Huyen Cu Chi TP.HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS')
-;INSERT INTO ds_truong VALUES ('79783511', 'THCS Trung Lap', 'Ap Trung Binh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS')
-;INSERT INTO ds_truong VALUES ('79783512', 'THCS An Nhon Tay', 'Ap Xom Trai', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS')
-;INSERT INTO ds_truong VALUES ('79783513', 'THCS An Phu', 'Ap Phu Binh Xa An Phu Huyen Cu Chi Tp. HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS')
-;INSERT INTO ds_truong VALUES ('79783514', 'THCS Nhuan Duc', 'Ap Nga Tu xa Nhuan Duc huyen Cu Chi', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS')
-;INSERT INTO ds_truong VALUES ('79783515', 'THCS Pham Van Coi', 'So 317 Duong Bui Thi Diet Ap 3', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS')
-;INSERT INTO ds_truong VALUES ('79783516', 'THCS Phu Hoa Dong', 'So 35 Nguyen Thi Ne Ap Phu Hoa', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS')
-;INSERT INTO ds_truong VALUES ('79783518', 'THCS Tan Thanh Dong', 'Ap 7', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS')
-;INSERT INTO ds_truong VALUES ('79783519', 'THCS Binh Hoa', 'Ap 4B', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS')
-;INSERT INTO ds_truong VALUES ('79783520', 'THCS Phu My Hung', 'So 16duong Phu ThuanAp Phu Loi xa Phu My Hung huyen Cu Chi TPHCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS')
-;INSERT INTO ds_truong VALUES ('79783521', 'THCS Hoa Phu', 'So 1650 Tinh lo 8 Ap 1', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS')
-;INSERT INTO ds_truong VALUES ('79783522', 'THCS Tan An Hoi', 'Ap Mui Lon 1 Huyen Cu Chi', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS')
-;INSERT INTO ds_truong VALUES ('79783523', 'THCS Tan Thanh Tay', 'Ap 2 - Xa Tan Thanh Tay - Huyen Cu Chi', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS')
-;INSERT INTO ds_truong VALUES ('79783524', 'THCS Trung An', 'Ap An Binh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS')
-;INSERT INTO ds_truong VALUES ('79783600', 'TH-THCS Tan Trung', '1310 Tinh Lo 8 xa Tan Thanh Dong Huyen Cu Chi', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS')
-;INSERT INTO ds_truong VALUES ('79784501', 'THCS Nguyen An Khuong', '66/6 Duong Le Thi Hong GamTo 32 Khu Pho 3 Thi Tran Hoc Mon Huyen Hoc Mon', 'Cong lap', 'Truong pho thong', 'Phong GDDT Hoc Mon', 'CS')
-;INSERT INTO ds_truong VALUES ('79784502', 'THCS THI TRAN', '23 Duong Le Thi Ha KP8 Thi Tran Hoc Mon Huyen Hoc Mon', 'Cong lap', 'Truong pho thong', 'Phong GDDT Hoc Mon', 'CS')
-;INSERT INTO ds_truong VALUES ('79784503', 'THCS TAM DONG 1', '636 duong Trinh Thi Mieng ap Trung Dong 1 xa Thoi Tam Thon huyen Hoc Mon', 'Cong lap', 'Truong pho thong', 'Phong GDDT Hoc Mon', 'CS')
-;INSERT INTO ds_truong VALUES ('79784504', 'THCS LY CHINH THANG 1', '5/5 duong Nguyen Thi Nuoi ap Dan Thang 2 xa Tan Thoi Nhi', 'Cong lap', 'Truong pho thong', 'Phong GDDT Hoc Mon', 'CS')
-;INSERT INTO ds_truong VALUES ('79784505', 'THCS TRUNG MY TAY 1', 'so 3A duong Nguyen Anh Thu ap My Hue xa Trung Chanh huyen Hoc Mon', 'Cong lap', 'Truong pho thong', 'Phong GDDT Hoc Mon', 'CS')
-;INSERT INTO ds_truong VALUES ('79784506', 'THCS DONG THANH', 'So 18 Duong Nguyen Thi Diep ap 1 Dong Thanh Hoc Mon', 'Cong lap', 'Truong pho thong', 'Phong GDDT Hoc Mon', 'CS')
-;INSERT INTO ds_truong VALUES ('79784507', 'THCS NGUYEN HONG DAO', '228/2D duong Nguyen Van Bua Ap 6 xa Xuan Thoi Son huyen Hoc Mon', 'Cong lap', 'Truong pho thong', 'Phong GDDT Hoc Mon', 'CS')
-;INSERT INTO ds_truong VALUES ('79784508', 'THCS DANG CONG BINH', 'Duong Bui Cong Trung Ap 3 Xa Nhi Binh Huyen Hoc Mon', 'Cong lap', 'Truong pho thong', 'Phong GDDT Hoc Mon', 'CS')
-;INSERT INTO ds_truong VALUES ('79784509', 'THCS DO VAN DAY', '8 duong Huynh Thi Mai ap Thoi Tay 1xa Tan Hiephuyen Hoc Mon thanh pho Ho Chi Minh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Hoc Mon', 'CS')
-;INSERT INTO ds_truong VALUES ('79784510', 'THCS PHAN CONG HON', '18/6 duong Nguyen Anh Thu Ap Trung Lan xa Ba Diem Huyen Hoc Mon.', 'Cong lap', 'Truong pho thong', 'Phong GDDT Hoc Mon', 'CS')
-;INSERT INTO ds_truong VALUES ('79784511', 'THCS TAN XUAN', '01 Quoc lo 22 Ap Tan Tien xa Xuan Thoi Dong Huyen Hoc Mon.', 'Cong lap', 'Truong pho thong', 'Phong GDDT Hoc Mon', 'CS')
-;INSERT INTO ds_truong VALUES ('79784512', 'THCS Xuan Thoi Thuong', 'so 35 duong Phan Van Hon Ap 4 xa Xuan Thoi Thuong huyen Hoc Mon', 'Cong lap', 'Truong pho thong', 'Phong GDDT Hoc Mon', 'CS')
-;INSERT INTO ds_truong VALUES ('79784513', 'THCS TO KY', 'So 12 duong To Ky 12 Ap Chanh 1 xa Tan Xuan huyen Hoc Mon TP HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Hoc Mon', 'CS')
-;INSERT INTO ds_truong VALUES ('79784514', 'THCS NGUYEN VAN BUA', 'nan', 'Cong lap', 'Truong pho thong', 'Phong GDDT Hoc Mon', 'CS')
-;INSERT INTO ds_truong VALUES ('79785501', 'THCS Nguyen Thai Binh', 'So 9 A Duong So 2 KDC Binh Hung xa Binh Hung huyen Binh Chanh Tp. HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79785502', 'THCS Phong Phu', 'Duong N18 KDC PHONG PHU 4
-AP 3 XA PHONG PHU HUYEN BINH CHANH', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79785503', 'THCS Qui Duc', 'B10/21 Doan Nguyen Tuan xa Qui Duc Huyen Binh Chanh Thanh pho Ho Chi Minh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79785504', 'THCS Hung Long', 'Ap 3 Hung Long', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79785505', 'THCS Tan Quy Tay', '16/18C ap 4 xa Tan Quy Tay huyen Binh Chanh Tp. Ho Chi Minh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79785506', 'THCS Nguyen Van Linh', 'KDC An Phu Tay Ap 2 xa An Phu Tay huyen Binh Chanh TpHCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79785507', 'THCS Binh Chanh', 'B15/8 Quoc lo 1Aap 2', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79785508', 'THCS Tan Tuc', 'C1/3 Bui Thanh KhietKhu pho 3 Thi Tran Tuan Tuc Huyen Binh Chanh Tp.HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79785509', 'THCS Tan Kien', 'D9/13D Duong Duong Dinh Cuc Ap 4 Xa Tan Kien Huyen Binh Chanh Tp. Ho Chi Minh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79785510', 'THCS Pham Van Hai', '3a28 Tinh Lo 10 Ap 3', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79785511', 'THCS Go Xoai', 'B2/317A Ap 2 xa Binh Loi Huyen Binh Chanh Tphcm', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79785512', 'THCS Le Minh Xuan', 'G8/1 Ap 7 Le Minh Xuan Huyen BInh Chanh TP.HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79785514', 'THCS Dong Den', 'F7/33 Ap 6 Duong Quach Dieu Vinh Loc A Binh Chanh TP HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79785515', 'THCS Vinh Loc A', 'F7/31 Ap 6 xa Vinh Loc A huyen Binh Chanh Thanh pho Ho Chi Minh.', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79785516', 'THCS Vinh Loc B', 'F6/40 Ap 6 A duong Lai Hung Cuong Xa Vinh Loc B Huyen Binh Chanh TPHCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79785517', 'THCS Da Phuoc', 'A3/99 Quoc lo 50 xa Da Phuoc Huyen Binh chanh TPHCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79785518', 'THCS Tan Nhut', 'E10/207B Ap 6 Tan Nhut', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79785519', 'THCS Vo Van Van', 'Khu dan cu Vinh Loc B Ap 1 xa Vinh Loc B huyen Binh Chanh Tp.Ho Chi Minh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79785601', 'TiH - THCS The Gioi Tre Em(TH)', 'So 29 duong so 3 KDC Trung Son', 'Tu thuc', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS')
-;INSERT INTO ds_truong VALUES ('79786501', 'THCS Nguyen Binh Khiem', '421 Huynh Tan Phat KP7 TTNB', 'Cong lap', 'Truong pho thong', 'Phong GDDT Nha Be', 'CS')
-;INSERT INTO ds_truong VALUES ('79786502', 'THCS Le Van Huu', '2596/20A Huynh Tan Phat Xa Phu Xuan Huyen Nha Be TPHCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Nha Be', 'CS')
-;INSERT INTO ds_truong VALUES ('79786503', 'THCS Hiep Phuoc', '1154 Nguyen Van Tao Ap 3', 'Cong lap', 'Truong pho thong', 'Phong GDDT Nha Be', 'CS')
-;INSERT INTO ds_truong VALUES ('79786504', 'THCS Nguyen Van Quy', '146A Le Van Luong Ap 1', 'Cong lap', 'Truong pho thong', 'Phong GDDT Nha Be', 'CS')
-;INSERT INTO ds_truong VALUES ('79786505', 'THCS Hai Ba Trung', 'Ap 2 xa  Nhon Duc', 'Cong lap', 'Truong pho thong', 'Phong GDDT Nha Be', 'CS')
-;INSERT INTO ds_truong VALUES ('79786506', 'THCS Phuoc Loc', '423/2 Dao Su Tich Ap 3 Xa Phuoc Loc', 'Cong lap', 'Truong pho thong', 'Phong GDDT Nha Be', 'CS')
-;INSERT INTO ds_truong VALUES ('79786507', 'THCS Le Thanh Cong', '63 duong Dao Su Tich Ap 3 xa Phuoc Kien huyen Nha Be TP.HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Nha Be', 'CS')
-;INSERT INTO ds_truong VALUES ('79786508', 'THCS Nguyen Thi Huong', 'nan', 'Cong lap', 'Truong pho thong', 'Phong GDDT Nha Be', 'CS')
-;INSERT INTO ds_truong VALUES ('79787501', 'THCS An Thoi Dong', 'Duong An Thoi Dong-Ap An Dong- xa An Thoi Dong', 'Cong lap', 'Truong pho thong', 'Phong GDDT Can Gio', 'CS')
-;INSERT INTO ds_truong VALUES ('79787502', 'TRUONG THCS LONG HOA', 'Duong Duyen HaiAp Long ThanhXa Long Hoa Huyen Can Gio Tp.Ho Chi Minh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Can Gio', 'CS')
-;INSERT INTO ds_truong VALUES ('79787503', 'THCS Ly Nhon', 'Ap Ly Thai Buu - Xa Ly Nhon - Huyen Can Gio - TP .Ho Chi MInh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Can Gio', 'CS')
-;INSERT INTO ds_truong VALUES ('79787504', 'THCS Tam Thon Hiep', 'Ap An Loc-Xa Tam Thon Hiep-Huyen Can Gio-TP.Ho Chi Minh.', 'Cong lap', 'Truong pho thong', 'Phong GDDT Can Gio', 'CS')
-;INSERT INTO ds_truong VALUES ('79787506', 'THCS Binh Khanh', 'Duong Rung SatAp Binh An Xa Binh Khanh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Can Gio', 'CS')
-;INSERT INTO ds_truong VALUES ('79787507', 'THCS Can Thanh', 'Duong Luong Van Nho- Khu pho Giong Ao-Thi Tran Can Thanh-Huyen Can gio-TPHCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Can Gio', 'CS')
-;INSERT INTO ds_truong VALUES ('79787508', 'THCS Doi Lau', 'Ap Ly Hoa Hiep xa Ly Nhon Huyen Can Gio Tp Ho Chi Minh.', 'Cong lap', 'Truong pho thong', 'Phong GDDT Can Gio', 'CS')
-;
+INSERT INTO ds_truong VALUES ('79000707', 'Phổ thông Năng khiếu thể thao Olympic', 'Đại học Thể dục thể thao TP. Hồ Chí Minh
+Khu phố 6 - phường Linh Trung - Quận Thủ Đức - TP. Hồ Chí Minh', 'Cong lap', 'Nang khieu the duc the thao', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000767', 'Tiểu học THCS và THPT Quốc Văn Sài Gòn', '300 Hòa Bình', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000774', 'TH - THCS - THPT Chu Văn An', 'Số 7 Đường Số 1 Khu Phố 1', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000791', 'Trung học cơ sở và trung học phổ thông Phùng Hưng', '14A Đường số 1 Phường 16 Quận Gò vấp TP Hồ Chí Minh', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000799', 'THCS - THPT Trần Cao Vân', '126 Tô Hiệu', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('790007A4', 'THCS và THPT Nam Việt', '25 21/1-3 23/7-9 Dương Đức Hiền', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('790007B4', 'THCS và THPT Hai Bà Trưng', '51/4 Nguyễn Thị Nhỏ', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('790007B9', 'Tiểu học THCS và THPT Mùa Xuân', '92 Nguyễn Hữu Cảnh phường 22 Quận Bình Thạnh', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000809', 'THCS và THPT Đăng Khoa', '571 Cô Bắc', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000810', 'THCS và THPT Hồng Hà', '170 Quang Trung', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000811', 'TH THCS THPT Tuệ Đức (2)', '249/108 Tân Thới Nhất 17', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000812', 'THCS và THPT Nguyễn Bỉnh Khiêm', '140 Lý Chính Thắng', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000813', 'Tiểu học THCS và THPT Ngô Thời Nhiệm', '65D Hồ Bá Phấn', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000814', 'THCSTHPT An Đông', '91 Nguyễn Chí Thanh', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000815', 'THCS THPT  Ngôi Sao', 'Đường số 18 Khu dân cư An Lạc', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000816', 'THCS-THPT Phan Bội Châu', 'Khong co', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000818', 'TH - THCS - THPT VẠN HẠNH', '781e Lê Hồng Phong P12 Q10', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000820', 'THPT Nam Sài Gòn', 'Khu A Nam Sài Gòn', 'Cong lap', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000822', 'THCS-THPT Hồng Đức', 'Số 8Đường Hồ Đắc DiPhường Tây ThạnhQuận Tân Phú TP Hồ Chí Minh', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000824', 'THCS và THPT Bắc Sơn', '338/24 Nguyễn Văn Quá P. Đông Hưng Thuận Quận 12', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000825', 'THCS và THPT Phạm Ngũ Lão', '69/11 Phạm Văn Chiêu P14 Gò Vấp', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000826', 'THCS và THPT Bạch Đằng', '53/1 Phan Văn Hớn', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000828', 'TH THCS và THPT Quốc Tế', '305 Nguyễn Trọng Tuyển Phường 10 Quận Phú Nhuận', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000829', 'THCS và THPT  Việt Thanh', '261 Cộng Hòa', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000830', 'THCS và THPT Trí Đức', '1333A Thoại Ngọc Hầu', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000831', 'THCS và THPT Thái Bình', '10 Trương Hoàng Thanh', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000832', 'TH-THCS-THPT Thanh Bình', '192/12 Nguyễn Thái Bình', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000834', 'THCS và THPT Nhân Văn', '17 Sơn Kỳ', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000835', 'THCS - THPT Nguyễn Khuyến', '136 Cộng Hòa', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000836', 'TH THCS và THPT Trương Vĩnh Ký', 'Khong co', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000838', 'THCS THPT Phan Châu Trinh', 'Số 12 Đường 23', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000841', 'THCS - THPT Duy Tân', '106 Nguyễn Giản Thanh', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000846', 'THCS và THPT Châu Á Thái Bình Dương', '33 C D E Nguyễn Bỉnh Khiêm', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000848', 'Tiểu học THCS và THPT Việt Mỹ', 'Khong co', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000849', 'THCS và THPT Đức Trí', '39/23 Bùi Văn Ba khu phố 2', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000850', 'THCS và THPT Đinh Thiện Lý', 'Lô 01 Khu A Nam Sài Gòn', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000851', 'THCS - THPT Sao Việt', '650q/15 Nguyễn Hữu Thọ', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000852', 'TH THCS và THPT Nam Mỹ', 'Khong co', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000853', 'Trung học thực hành Sài Gòn', '220 Tần Bình Trọng', 'Cong lap', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000854', 'THCS - THPT Lạc Hồng', '2276/5 Quốc lộ 1A', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000855', 'THCS và THPT Quang Trung Nguyễn Huệ', '223 Nguyễn Tri Phương', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000856', 'THCS và THPT Khai Minh', '410 Tân Kỳ Tân Quý', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000857', 'THCS  VÀ THPT NGỌC VIỄN ĐÔNG', 'Khong co', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000858', 'Tiểu học THCS và THPT Tân Phú', '519 Kênh Tân Hóa', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000859', 'THCS - THPT Bác Ái', '187 Gò Cẩm Đệm P.10 Q.Tân Bình TP.HCM', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000860', 'THCS và THPT Sương Nguyệt Anh', '249 Hòa Hảo', 'Cong lap', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000861', 'THCS và THPT Diên Hồng', '11 Thành Thái  phường 14 quận 10', 'Cong lap', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000865', 'THCS và THPT Hoa Lư', '201 Phan Văn Hớn', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000866', 'THCS và THPT Đào Duy Anh', '355 Nguyễn Văn Luông', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000868', 'THCS và THPT ĐINH TIÊN HOÀNG', '85 Chế Lan Viên', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000869', 'THPT Lương Thế Vinh', '131 Cô Bắc', 'Cong lap', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000871', 'THPT Năng Khiếu TDTT', '43 Điện Biên Phủ', 'Cong lap', 'Nang khieu the duc the thao', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000872', 'THCS và THPT Việt Anh', '269A Nguyễn Trọng Tuyển P10 Phú Nhuận', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000873', 'THCS và THPT Hoa Sen', '26 Phan Chu Trinh', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000874', 'Tiểu học THCS và THPT Vinschool', 'Tòa CC3 khu đô thị Vinhomes Central Park 720A Điện Biên Phủ', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000876', 'THCS và THPT Thạnh An', 'Khong co', 'Cong lap', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000888', 'Tiểu học THCS và THPT Lê Thánh Tông', 'Khong co', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000C01', 'PTDL Hermann Gmeiner', '697 Quang Trung', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000C03', 'Tiểu học THCS và THPT Việt Úc', '594 Ba Tháng Hai - phường 14 - Quận 10 - Tp. HCM', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000C04', 'THCS Song ngữ Quốc tế Horizon', '6-6A-8 dường số 44', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000C05', 'Tiểu học THCS và THPT Quốc tế Canada', 'Số 86 Đường 23', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000C06', 'TiH - THCS - THPT QUỐC TẾ BẮC MỸ', '1 Đường 5A Kdc Trung Sơn', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000C07', 'Tiểu học THCS và THPT Thái Bình Dương', '125 Bạch Đằng', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000C09', 'TH THCS VÀ THPT Nguyễn Tri Phương', '61a Đường 30', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000C10', 'Tiểu học THCS và THPT Anh Quốc', 'Khong co', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000C11', 'Tiểu học THCS và THPT Emasi Nam Long', 'Khong co', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000C12', 'Tiểu học THCS và THPT Mỹ Việt', '95 Phan Văn Hớn-Phường Tân Thới Nhất-Quận 12 - Thành Phố Hồ Chí Minh', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000C13', 'Tiểu học THCS và THPT Emasi Vạn Phúc', 'Khong co', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000C15', 'Tiểu học THCS và THPT Hoàng Gia', 'Khong co', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000C19', 'Tiểu học THCS và THPT Albert Einstein', 'Khu Dân Cư 13c đại lộ Nguyễn Văn Linh xã Phong Phú huyện Bình Chánh TP Hồ Chí Minh', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000F02', 'THPT chuyên Trần Đại Nghĩa', '53 Nguyễn Du', 'Cong lap', 'Truong chuyen', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79000F03', 'THPT Chuyên Năng khiếu TDTT Nguyễn Thị Định', '215 Đường Hoàng Ngân', 'Cong lap', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('7900QT01', 'Tiểu học THCS và THPT Quốc tế Khai Sáng', 'Khong co', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('7900QT02', 'Trường Quốc tế Việt Nam - Phần Lan', 'Khong co', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('7900QT2', 'Trường Quốc tế Việt Nam - Phần Lan', 'Khong co', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79760419', 'Tiểu học THCS  và THPT Quốc tế Á Châu', 'Số 41/3-41/4 Bis Trần Nhật Duật', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79767601', 'Tiểu học THCS và THPT Hòa Bình', '69 Trịnh Đình Thảo', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79770601', 'TiH - THCS - THPT Tây Úc', '157 Lý Chính Thắng', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79770702', 'Tiểu học THCS và THPT Úc Châu', 'Khong co', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79777418', 'Tiểu học THCS và THPT Ngôi Sao Nhỏ', '10 Đường số 22 Phường Bình Trị Đông B Quận Bình Tân', 'Tu thuc', 'Truong pho thong', 'XXX', 'CS');
+INSERT INTO ds_truong VALUES ('79760501', 'THCS Chu Văn An', '115 Cống Quỳnh', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 1', 'CS');
+INSERT INTO ds_truong VALUES ('79760502', 'THCS Trần Văn Ơn', '161B Nguyễn Văn Thủ', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 1', 'CS');
+INSERT INTO ds_truong VALUES ('79760503', 'THCS Minh Đức', '75 Nguyễn Thái Học', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 1', 'CS');
+INSERT INTO ds_truong VALUES ('79760504', 'THCS Nguyễn Du Q1', '139 Nguyễn Du', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 1', 'CS');
+INSERT INTO ds_truong VALUES ('79760505', 'THCS Văn Lang', '51 Trần Quý Khách', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 1', 'CS');
+INSERT INTO ds_truong VALUES ('79760506', 'THCS Võ Trường Toản', '11 Nguyễn Bỉnh Khiêm', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 1', 'CS');
+INSERT INTO ds_truong VALUES ('79760507', 'THCS Đức Trí', '273 Nguyễn Trãi', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 1', 'CS');
+INSERT INTO ds_truong VALUES ('79760508', 'THCS Đồng Khởi', '11 Phan Văn Trường', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 1', 'CS');
+INSERT INTO ds_truong VALUES ('79760509', 'THCS Huỳnh Khương Ninh', '61 Huỳnh Khương Ninh', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 1', 'CS');
+INSERT INTO ds_truong VALUES ('79761501', 'THCS An Phú Đông', '2688/1A Khu Phố 1', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 12', 'CS');
+INSERT INTO ds_truong VALUES ('79761502', 'THCS Nguyễn An Ninh', '2384/36 Kp5', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 12', 'CS');
+INSERT INTO ds_truong VALUES ('79761503', 'THCS Phan Bội Châu', 'Đường ĐHT 30 Khu phố 4 Phường Đông Hưng Thuận Q12 TP.HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 12', 'CS');
+INSERT INTO ds_truong VALUES ('79761504', 'THCS Lương Thế Vinh', '301/34 Kp3', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 12', 'CS');
+INSERT INTO ds_truong VALUES ('79761505', 'THCS Nguyễn Ảnh Thủ', '224 Phan Văn Hớn Khu Phố 6 P.Tân Thới Nhất Q12TPHCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 12', 'CS');
+INSERT INTO ds_truong VALUES ('79761506', 'THCS Nguyễn Vĩnh Nghiệp', '51/5B Kp2', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 12', 'CS');
+INSERT INTO ds_truong VALUES ('79761507', 'THCS Nguyễn Hiền', 'Khu Phố 3a', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 12', 'CS');
+INSERT INTO ds_truong VALUES ('79761508', 'THCS Trần Quang Khải', '641 Kp8', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 12', 'CS');
+INSERT INTO ds_truong VALUES ('79761509', 'THCS Nguyễn Huệ', '2K Nguyễn Thị Đặng Khu phố 6', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 12', 'CS');
+INSERT INTO ds_truong VALUES ('79761510', 'THCS Trần Hưng Đạo', 'Khu Phố 1', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 12', 'CS');
+INSERT INTO ds_truong VALUES ('79761511', 'THCS Nguyễn Trung Trực', '364 Đường TA28  Kp 5 phường Thới An quận 12', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 12', 'CS');
+INSERT INTO ds_truong VALUES ('79761512', 'THCS Nguyễn Chí Thanh', 'Khu phố 3', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 12', 'CS');
+INSERT INTO ds_truong VALUES ('79761513', 'THCS Hà Huy Tập', 'Khu phố 5 phường Đông Hưng Thuận Q12 TP.HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 12', 'CS');
+INSERT INTO ds_truong VALUES ('79761514', 'THCS Trần Phú', 'Khong co', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 12', 'CS');
+INSERT INTO ds_truong VALUES ('79762501', 'THCS Lê Quý Đôn', '234 Võ Văn Ngân', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS');
+INSERT INTO ds_truong VALUES ('79762502', 'THCS Trương Văn Ngư', '49 Võ Văn Ngân KP2', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS');
+INSERT INTO ds_truong VALUES ('79762503', 'THCS Ngô Chí Quốc', 'Số 23 Đường 27 Kp9', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS');
+INSERT INTO ds_truong VALUES ('79762504', 'THCS Hiệp Bình', 'số 4 đường số 4 Kp6', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS');
+INSERT INTO ds_truong VALUES ('79762505', 'THCS Thái Văn Lung', '35 Phú Châu', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS');
+INSERT INTO ds_truong VALUES ('79762506', 'THCS Tam Bình', 'Số 2 Đường 10 Kp4', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS');
+INSERT INTO ds_truong VALUES ('79762507', 'THCS Xuân Trường', '47 QL1K Kp2', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS');
+INSERT INTO ds_truong VALUES ('79762508', 'THCS Linh Trung', 'số 5 Kp2', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS');
+INSERT INTO ds_truong VALUES ('79762509', 'THCS Linh Đông', 'Kp4', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS');
+INSERT INTO ds_truong VALUES ('79762510', 'THCS Bình Chiểu', 'Số 2 Kp3 đường Bình Chiểu', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS');
+INSERT INTO ds_truong VALUES ('79762511', 'THCS Bình Thọ', '39 Thống Nhất', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS');
+INSERT INTO ds_truong VALUES ('79762512', 'THCS Lê Văn Việt', '15 Nguyễn  Bá Luật kp2 p.Bình Thọ. q.Thủ Đức TP.HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS');
+INSERT INTO ds_truong VALUES ('79762514', 'THCS Nguyễn Văn Bá', '99/21 Đường 11 Kp4', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS');
+INSERT INTO ds_truong VALUES ('79762515', 'THCS Trường Thọ', '71/25 Đường 8 Khu Phố 2 Phường Trường Thọ Quận Thủ Đức', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS');
+INSERT INTO ds_truong VALUES ('79762516', 'THCS Dương Văn Thì', 'Khong co', 'Cong lap', 'Truong pho thong', 'Phong GDDT Thu Duc', 'CS');
+INSERT INTO ds_truong VALUES ('79763501', 'THCS Phước Bình', '02 Đường 22 Phước Bình', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 9', 'CS');
+INSERT INTO ds_truong VALUES ('79763502', 'THCS Hưng Bình', '819 Nguyễn Xiển KP Long Hòa P. Long Thạnh Mỹ Q.9', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 9', 'CS');
+INSERT INTO ds_truong VALUES ('79763503', 'THCS Hoa Lư', 'Đường Quang Trung', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 9', 'CS');
+INSERT INTO ds_truong VALUES ('79763504', 'THCS Trần Quốc Toản', '381 đường Lê Văn Việt', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 9', 'CS');
+INSERT INTO ds_truong VALUES ('79763505', 'THCS Long Trường', 'Nguyễn Duy TrinhKhu phố Ông Nhiêu', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 9', 'CS');
+INSERT INTO ds_truong VALUES ('79763506', 'THCS Long Phước', '18 Đường 6 Kp Long Thuận', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 9', 'CS');
+INSERT INTO ds_truong VALUES ('79763507', 'THCS Đặng Tấn Tài', 'Đường 128 KP4 Phước Long A', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 9', 'CS');
+INSERT INTO ds_truong VALUES ('79763508', 'THCS Phú Hữu', 'Khu phố 1 Phường Phú Hữu Q9 Tp.HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 9', 'CS');
+INSERT INTO ds_truong VALUES ('79763509', 'THCS Tân Phú', '119 Nam Cao', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 9', 'CS');
+INSERT INTO ds_truong VALUES ('79763510', 'THCS Trường Thạnh', '3/1 đường 3 KP Phước Hiệp', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 9', 'CS');
+INSERT INTO ds_truong VALUES ('79763511', 'THCS Long Bình', '1080 Nguyễn Xiển KP.Bến Đò P. Long Bình Quận 9', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 9', 'CS');
+INSERT INTO ds_truong VALUES ('79763512', 'THCS Tăng Nhơn Phú B', 'Dương Đình Hội Khu phố 3 Phường Tăng Nhơn Phú B Quận 9 HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 9', 'CS');
+INSERT INTO ds_truong VALUES ('79763513', 'THCS Hiệp Phú', 'Khong co', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 9', 'CS');
+INSERT INTO ds_truong VALUES ('79764501', 'THCS Nguyễn Văn Trỗi', '112/24 Nguyễn Thái Sơn', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS');
+INSERT INTO ds_truong VALUES ('79764502', 'THCS Nguyễn Du', '119 Thống Nhất', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS');
+INSERT INTO ds_truong VALUES ('79764503', 'THCS Gò Vấp', '01 Nguyễn Du', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS');
+INSERT INTO ds_truong VALUES ('79764504', 'THCS Quang Trung', '387 Quang Trung Phường 10 Quận Gò Vấp TPHCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS');
+INSERT INTO ds_truong VALUES ('79764505', 'THCS Phạm Văn Chiêu', 'Số 4 Phạm Văn Chiêu', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS');
+INSERT INTO ds_truong VALUES ('79764507', 'THCS Phan Tây Hồ', '18B/27 Thống Nhất', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS');
+INSERT INTO ds_truong VALUES ('79764508', 'THCS An Nhơn', '350/54/51 Lê Đức Thọ', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS');
+INSERT INTO ds_truong VALUES ('79764509', 'THCS Nguyễn Văn Nghi', '111 Lương Ngọc Quyến', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS');
+INSERT INTO ds_truong VALUES ('79764510', 'THCS Trường Sơn', '43 Nguyễn Văn Bảo', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS');
+INSERT INTO ds_truong VALUES ('79764511', 'THCS Thông Tây Hội', '01 Quang Trung', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS');
+INSERT INTO ds_truong VALUES ('79764512', 'THCS Lý Tự Trọng', '578 Lê Đức Thọ', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS');
+INSERT INTO ds_truong VALUES ('79764513', 'THCS Nguyễn Trãi', '1370 Lê Đức Thọ', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS');
+INSERT INTO ds_truong VALUES ('79764514', 'THCS Tân Sơn', '162/27 Nguyễn Duy Cung', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS');
+INSERT INTO ds_truong VALUES ('79764515', 'THCS Huỳnh Văn Nghệ', '237/65 Phạm Văn Chiêu', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS');
+INSERT INTO ds_truong VALUES ('79764516', 'THCS Phan Văn Trị', '468/2/2 Phan Văn Trị Phường 7 Gò Vấp', 'Cong lap', 'Truong pho thong', 'Phong GDDT Go Vap', 'CS');
+INSERT INTO ds_truong VALUES ('79765501', 'THCS Lam Sơn', '280 Bùi Hữu Nghĩa', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS');
+INSERT INTO ds_truong VALUES ('79765502', 'THCS Hà Huy Tập', 'Số 7 Phan Đăng Lưu', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS');
+INSERT INTO ds_truong VALUES ('79765503', 'THCS Nguyễn Văn Bé', '206 Nguyễn Văn Đậu', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS');
+INSERT INTO ds_truong VALUES ('79765504', 'THCS Rạng Đông', '17 Ngô Đức Kế p.12 QBình Thạnh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS');
+INSERT INTO ds_truong VALUES ('79765505', 'THCS Bình Lợi Trung', '179 Đường Trục', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS');
+INSERT INTO ds_truong VALUES ('79765506', 'THCS Lê Văn Tám', '107F Chu Văn An', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS');
+INSERT INTO ds_truong VALUES ('79765507', 'THCS Phú Mỹ', '120B Ngô Tất Tố', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS');
+INSERT INTO ds_truong VALUES ('79765508', 'THCS Cửu Long', '102 Ngô Tất Tố', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS');
+INSERT INTO ds_truong VALUES ('79765509', 'THCS Đống Đa', '217 Đường D2 Phường 25 Quận Bình Thạnh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS');
+INSERT INTO ds_truong VALUES ('79765510', 'THCS Thanh Đa', 'Cạnh Lô L Cư Xá Thanh Đa', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS');
+INSERT INTO ds_truong VALUES ('79765511', 'THCS  Trương Công Định', '131 Đinh Tiên Hoàng', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS');
+INSERT INTO ds_truong VALUES ('79765512', 'THCS Yên Thế', '399 Lê Quang Định', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS');
+INSERT INTO ds_truong VALUES ('79765513', 'THCS Điện Biên', '200 Điện Biên Phủ', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS');
+INSERT INTO ds_truong VALUES ('79765514', 'THCS Cù Chính Lan', '17/49 Thanh Đa', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS');
+INSERT INTO ds_truong VALUES ('79765515', 'THCS Bình Quới Tây', '376A Bình Quới', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Thanh', 'CS');
+INSERT INTO ds_truong VALUES ('79766501', 'THCS Ngô Sĩ Liên', '12 Phạm Văn Hai', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Binh', 'CS');
+INSERT INTO ds_truong VALUES ('79766502', 'THCS Trần Văn Đang', '27 Nghĩa Hoà', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Binh', 'CS');
+INSERT INTO ds_truong VALUES ('79766503', 'THCS Nguyễn Gia Thiều', '272 Lý Thường Kiệt', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Binh', 'CS');
+INSERT INTO ds_truong VALUES ('79766504', 'THCS Quang Trung', '14-16 Tân Lập', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Binh', 'CS');
+INSERT INTO ds_truong VALUES ('79766505', 'THCS Lý Thường Kiệt', '104 Thiên Phước', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Binh', 'CS');
+INSERT INTO ds_truong VALUES ('79766506', 'THCS Võ Văn Tần', '261 Võ Thành Trang', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Binh', 'CS');
+INSERT INTO ds_truong VALUES ('79766507', 'THCS Hoàng Hoa Thám', '135 Hoàng Hoa Thám', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Binh', 'CS');
+INSERT INTO ds_truong VALUES ('79766508', 'THCS Âu Lạc', '46 Hoàng Việt phường 4 quận Tân Bình', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Binh', 'CS');
+INSERT INTO ds_truong VALUES ('79766509', 'THCS Tân Bình', '873 Cách Mạng Tháng Tám', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Binh', 'CS');
+INSERT INTO ds_truong VALUES ('79766510', 'THCS Phạm Ngọc Thạch', '17-19 Âu Cơ', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Binh', 'CS');
+INSERT INTO ds_truong VALUES ('79766511', 'THCS Ngô Quyền', '97 Trường Chinh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Binh', 'CS');
+INSERT INTO ds_truong VALUES ('79766512', 'THCS Trường Chinh', '162t Trường Chinh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Binh', 'CS');
+INSERT INTO ds_truong VALUES ('79766513', 'THCS Trần Văn Quang', 'Ni sư Huỳnh Liên Phường 10 Quận Tân Bình', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Binh', 'CS');
+INSERT INTO ds_truong VALUES ('79767418', 'THCS Hồng Ngọc', '58/4 Lũy Bán Bích', 'Tu thuc', 'Truong pho thong', 'Phong GDDT Tan Phu', 'CS');
+INSERT INTO ds_truong VALUES ('79767501', 'THCS Đặng Trần Côn', '15/29 Cầu Xéo', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Phu', 'CS');
+INSERT INTO ds_truong VALUES ('79767502', 'THCS Lê Lợi', '47/22a Đường S11', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Phu', 'CS');
+INSERT INTO ds_truong VALUES ('79767503', 'THCS Võ Thành Trang', '218 Tân Quý', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Phu', 'CS');
+INSERT INTO ds_truong VALUES ('79767504', 'THCS Đồng Khởi', '20 Thạch Lam', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Phu', 'CS');
+INSERT INTO ds_truong VALUES ('79767505', 'THCS Hùng Vương', '20f Lương Minh Nguyệt', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Phu', 'CS');
+INSERT INTO ds_truong VALUES ('79767506', 'THCS Lê Anh Xuân', '211/53 Vườn Lài', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Phu', 'CS');
+INSERT INTO ds_truong VALUES ('79767507', 'THCS Phan Bội Châu', '35 Độc Lập', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Phu', 'CS');
+INSERT INTO ds_truong VALUES ('79767508', 'THCS Tân Thới Hòa', '149/15 Lý Thánh Tông phường Tân Thới Hòa quận Tân Phú TP.HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Phu', 'CS');
+INSERT INTO ds_truong VALUES ('79767509', 'THCS Thoại Ngọc Hầu', '24 Huỳnh Văn Chính', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Phu', 'CS');
+INSERT INTO ds_truong VALUES ('79767510', 'THCS Trần Quang Khải', '94/3 Nguyễn Thế Truyện', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Phu', 'CS');
+INSERT INTO ds_truong VALUES ('79767511', 'THCS Nguyễn Huệ', '289 Thành Công', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Phu', 'CS');
+INSERT INTO ds_truong VALUES ('79767512', 'THCS Hoàng Diệu', 'Khong co', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Phu', 'CS');
+INSERT INTO ds_truong VALUES ('79767513', 'THCS Tôn Thất Tùng', '3 đường D2 phường Sơn Kỳ quận Tân Phú TP HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Tan Phu', 'CS');
+INSERT INTO ds_truong VALUES ('79768501', 'THCS Cầu Kiệu', '244 Phan Đình Phùng', 'Cong lap', 'Truong pho thong', 'Phong GDDT Phu Nhuan', 'CS');
+INSERT INTO ds_truong VALUES ('79768502', 'TRƯỜNG THCS Độc Lập', '94 Thích Quảng Đức', 'Cong lap', 'Truong pho thong', 'Phong GDDT Phu Nhuan', 'CS');
+INSERT INTO ds_truong VALUES ('79768503', 'THCS Ngô Tất Tố', '17 Đặng Văn Ngữ', 'Cong lap', 'Truong pho thong', 'Phong GDDT Phu Nhuan', 'CS');
+INSERT INTO ds_truong VALUES ('79768504', 'THCS Châu Văn Liêm', '93 Phan Đăng Lưu', 'Cong lap', 'Truong pho thong', 'Phong GDDT Phu Nhuan', 'CS');
+INSERT INTO ds_truong VALUES ('79768506', 'THCS Đào Duy Anh', '14 Lê Quí Đôn', 'Cong lap', 'Truong pho thong', 'Phong GDDT Phu Nhuan', 'CS');
+INSERT INTO ds_truong VALUES ('79768507', 'THCS Trần Huy Liệu', '94 Nguyễn Đình Chiểu', 'Cong lap', 'Truong pho thong', 'Phong GDDT Phu Nhuan', 'CS');
+INSERT INTO ds_truong VALUES ('79769411', 'TH - THCS Tuệ Đức', '1/5 Bis Lương Định Của', 'Tu thuc', 'Truong pho thong', 'Phong GDDT quan 2', 'CS');
+INSERT INTO ds_truong VALUES ('79769501', 'THCS An Phú', '589C Khu phố 4', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 2', 'CS');
+INSERT INTO ds_truong VALUES ('79769502', 'THCS Giồng Ông Tố', '256B Nguyễn Duy Trinh', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 2', 'CS');
+INSERT INTO ds_truong VALUES ('79769503', 'THCS Nguyễn Văn Trỗi', '571 Nguyễn Duy Trinh', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 2', 'CS');
+INSERT INTO ds_truong VALUES ('79769504', 'THCS Thạnh Mỹ Lợi', '42 đường 5 Khu phố 2', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 2', 'CS');
+INSERT INTO ds_truong VALUES ('79769506', 'THCS Lương Định Của', 'Số 2 Đường Lê Hiến Mai', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 2', 'CS');
+INSERT INTO ds_truong VALUES ('79769507', 'THCS Bình An', '25 Đường 34 Kp2', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 2', 'CS');
+INSERT INTO ds_truong VALUES ('79769508', 'THCS Nguyễn Thị Định', 'Số 2 Đường 7 Kp2', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 2', 'CS');
+INSERT INTO ds_truong VALUES ('79769509', 'THCS Trần Quốc Toản', '218 Vũ Tông Phan Phường An Phú Quận 2', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 2', 'CS');
+INSERT INTO ds_truong VALUES ('79769510', 'THCS Cát Lái', 'Số 15 Đường 69 KP3 Phường Cát Lái Quận 2', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 2', 'CS');
+INSERT INTO ds_truong VALUES ('79770501', 'THCS Bàn Cờ', '16 Đường Số 3 C/x Đô Thành', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 3', 'CS');
+INSERT INTO ds_truong VALUES ('79770502', 'THCS Colette', '10 Hồ Xuân Hương Phuờng 6 Quận 3', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 3', 'CS');
+INSERT INTO ds_truong VALUES ('79770503', 'THCS Đoàn Thị Điểm', '413/86 Lê Văn Sỹ', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 3', 'CS');
+INSERT INTO ds_truong VALUES ('79770504', 'THCS Hai Bà Trưng', '295 Hai Bà Trưng', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 3', 'CS');
+INSERT INTO ds_truong VALUES ('79770505', 'THCS Lê lợi', '282 Võ Thị Sáu', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 3', 'CS');
+INSERT INTO ds_truong VALUES ('79770506', 'THCS Lê Quý Đôn', '9B Võ Văn Tần', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 3', 'CS');
+INSERT INTO ds_truong VALUES ('79770507', 'THCS Lương Thế Vinh', '474 CMT8', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 3', 'CS');
+INSERT INTO ds_truong VALUES ('79770508', 'THCS Thăng Long', '482-484 Nguyễn Thị Minh Khai', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 3', 'CS');
+INSERT INTO ds_truong VALUES ('79770509', 'THCS Bạch Đằng', '386/42 Lê Văn Sỹ', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 3', 'CS');
+INSERT INTO ds_truong VALUES ('79770510', 'THCS Kiến Thiết', '223/4 Nguyễn Đình Chiểu', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 3', 'CS');
+INSERT INTO ds_truong VALUES ('79770511', 'THCS Phan Sào Nam', '657 Điện Biên Phủ', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 3', 'CS');
+INSERT INTO ds_truong VALUES ('79771501', 'THCS Hoàng Văn Thụ', '322 Nguyễn Tri Phương', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 10', 'CS');
+INSERT INTO ds_truong VALUES ('79771502', 'THCS Nguyễn Tri Phương', '26 Nguyễn Lâm', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 10', 'CS');
+INSERT INTO ds_truong VALUES ('79771503', 'THCS Nguyễn Văn Tố', '332 - 334 Tô Hiến Thành', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 10', 'CS');
+INSERT INTO ds_truong VALUES ('79771504', 'THCS Lạc Hồng', '436/4 Ba Tháng Hai', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 10', 'CS');
+INSERT INTO ds_truong VALUES ('79771505', 'THCS Trần Phú', '82 Cửu Long', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 10', 'CS');
+INSERT INTO ds_truong VALUES ('79771507', 'THCS Cách Mạng Tháng Tám', '289 Cách Mạng Tháng 8', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 10', 'CS');
+INSERT INTO ds_truong VALUES ('79772501', 'THCS Nguyễn Văn Phú', '161B/112 Lạc Long Quân', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 11', 'CS');
+INSERT INTO ds_truong VALUES ('79772502', 'THCS Lê Quý Đôn', '343D Lạc Long Quân', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 11', 'CS');
+INSERT INTO ds_truong VALUES ('79772503', 'THCS Nguyễn Huệ', '429/9 Lạc Long Quân', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 11', 'CS');
+INSERT INTO ds_truong VALUES ('79772504', 'THCS Nguyễn Minh Hoàng', '185/2 Lý Thường Kiệt', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 11', 'CS');
+INSERT INTO ds_truong VALUES ('79772505', 'THCS Chu Văn An', '01 Dương Đình Nghệ', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 11', 'CS');
+INSERT INTO ds_truong VALUES ('79772506', 'THCS Lê Anh Xuân', '40 đường 762 Hồng Bàng', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 11', 'CS');
+INSERT INTO ds_truong VALUES ('79772507', 'THCS Phú Thọ', '1122 đường 3/2', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 11', 'CS');
+INSERT INTO ds_truong VALUES ('79772508', 'THCS Lữ Gia', '52/1A cư xá Lữ Gia', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 11', 'CS');
+INSERT INTO ds_truong VALUES ('79772509', 'THCS Hậu Giang', '8 Lò Siêu', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 11', 'CS');
+INSERT INTO ds_truong VALUES ('79772511', 'THCS Việt Mỹ', '252 Lạc Long Quân', 'Tu thuc', 'Truong pho thong', 'Phong GDDT quan 11', 'CS');
+INSERT INTO ds_truong VALUES ('79773501', 'THCS Nguyễn Huệ', '42 Nguyễn Khoái', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 4', 'CS');
+INSERT INTO ds_truong VALUES ('79773502', 'THCS Quang Trung', '209 Đường 14', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 4', 'CS');
+INSERT INTO ds_truong VALUES ('79773503', 'THCS Tăng Bạt Hổ', '92 B/20 Bis Tôn Thất Thuyết', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 4', 'CS');
+INSERT INTO ds_truong VALUES ('79773504', 'THCS Vân Đồn', '243 Hoàng Diệu Phường 8 Quận 4', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 4', 'CS');
+INSERT INTO ds_truong VALUES ('79773506', 'THCS Chi Lăng', '129/63A Nguyễn Hữu Hào', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 4', 'CS');
+INSERT INTO ds_truong VALUES ('79773507', 'THCS Khánh Hội', 'A75 Nguyễn Thần Hiến', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 4', 'CS');
+INSERT INTO ds_truong VALUES ('79774501', 'THCS Ba Đình', '129 Phan Văn Trị', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 5', 'CS');
+INSERT INTO ds_truong VALUES ('79774502', 'Trung học cơ sở Kim Đồng', '503 Phan Văn Trị', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 5', 'CS');
+INSERT INTO ds_truong VALUES ('79774503', 'THCS Hồng Bàng', '132 Hồng Bàng', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 5', 'CS');
+INSERT INTO ds_truong VALUES ('79774504', 'THCS Trần Bội Cơ', '266 Hải Thượng Lãn Ông', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 5', 'CS');
+INSERT INTO ds_truong VALUES ('79774505', 'THCS Lý Phong', '83 Nguyễn Duy Dương', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 5', 'CS');
+INSERT INTO ds_truong VALUES ('79774506', 'THCS Mạch Kiếm Hùng', '712 Nguyễn Trãi', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 5', 'CS');
+INSERT INTO ds_truong VALUES ('79774601', 'THCS Văn Lang', '02-04 Tân Thành', 'Tu thuc', 'Truong pho thong', 'Phong GDDT quan 5', 'CS');
+INSERT INTO ds_truong VALUES ('79775421', 'TH - THCS QT Mỹ Úc(TH)', '62_62A Minh Phung', 'Tu thuc', 'Truong pho thong', 'Phong GDDT quan 6', 'CS');
+INSERT INTO ds_truong VALUES ('79775501', 'THCS Nguyễn Đức Cảnh', '242-minh Phụng', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 6', 'CS');
+INSERT INTO ds_truong VALUES ('79775502', 'THCS Phú Định', '94bis Lý Chiêu Hoàng', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 6', 'CS');
+INSERT INTO ds_truong VALUES ('79775503', 'THCS Hậu Giang', '176/1A Hậu Giang', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 6', 'CS');
+INSERT INTO ds_truong VALUES ('79775504', 'THCS Phạm Đình Hổ', '270 Gia Phú', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 6', 'CS');
+INSERT INTO ds_truong VALUES ('79775505', 'THCS Đoàn Kết', '183A Tân Hoà Đông', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 6', 'CS');
+INSERT INTO ds_truong VALUES ('79775506', 'THCS Nguyễn Văn Luông', '241/159 Nguyễn Văn Luông Phường 11 Quận 6', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 6', 'CS');
+INSERT INTO ds_truong VALUES ('79775507', 'Trường THCS Lam Sơn', '805a Hậu Giang', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 6', 'CS');
+INSERT INTO ds_truong VALUES ('79775508', 'THCS Bình Tây', '36A Bình Tây', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 6', 'CS');
+INSERT INTO ds_truong VALUES ('79775509', 'THCS Văn Thân', '118B Văn Thân', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 6', 'CS');
+INSERT INTO ds_truong VALUES ('79775510', 'THCS Hoàng Lê Kha', '383-391 Bến Phú Lâm', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 6', 'CS');
+INSERT INTO ds_truong VALUES ('79776501', 'THCS Dương Bá Trạc', '134 Dương Bá Trạc', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 8', 'CS');
+INSERT INTO ds_truong VALUES ('79776502', 'THCS Khánh Bình', '314B Âu Dương Lân Phường 3 Quận 8', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 8', 'CS');
+INSERT INTO ds_truong VALUES ('79776503', 'THCS Chánh Hưng', '995 Phạm Thế Hiển', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 8', 'CS');
+INSERT INTO ds_truong VALUES ('79776504', 'THCS Sương Nguyệt Anh', '53 Bùi Minh Trực', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 8', 'CS');
+INSERT INTO ds_truong VALUES ('79776505', 'THCS Phan Đăng Lưu', '104 Bis Bùi Minh Trực', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 8', 'CS');
+INSERT INTO ds_truong VALUES ('79776506', 'THCS Trần Danh Ninh', '121 Ba Đình', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 8', 'CS');
+INSERT INTO ds_truong VALUES ('79776507', 'THCS Tùng Thiện Vương', '381 Tùng thiện Vương P12 Q8 TP. Hồ Chí Minh', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 8', 'CS');
+INSERT INTO ds_truong VALUES ('79776508', 'THCS Lê Lai', '236 Bình Đông P.15', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 8', 'CS');
+INSERT INTO ds_truong VALUES ('79776509', 'THCS Bình An', '2673 Phạm Thế Hiển', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 8', 'CS');
+INSERT INTO ds_truong VALUES ('79776510', 'THCS Bình Đông', '58 Bến Phú Định', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 8', 'CS');
+INSERT INTO ds_truong VALUES ('79776511', 'THCS Lý Thánh Tông', '481 Ba Đình', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 8', 'CS');
+INSERT INTO ds_truong VALUES ('79776512', 'THCS Phú Lợi', 'số 56 đường Trịnh Quang Nghị phường 7 Quận 8 Thành phố Hồ Chí Minh', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 8', 'CS');
+INSERT INTO ds_truong VALUES ('79777501', 'THCSCL An Lạc', '4b Phùng Tá Chu  KP7 phường  An Lạc A Quận Bình Tân thành phố Hồ Chí Minh.', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Tan', 'CS');
+INSERT INTO ds_truong VALUES ('79777502', 'THCSCL Hồ Văn Long', '52 Hồ Văn Long Kp4', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Tan', 'CS');
+INSERT INTO ds_truong VALUES ('79777503', 'THCSCL Bình Hưng Hòa', '10/47 quốc lộ 1A Kp3', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Tan', 'CS');
+INSERT INTO ds_truong VALUES ('79777504', 'THCS Bình Trị Đông', 'B15/22c Hương Lộ 2p Bình Trị Đôngq Bình TânHCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Tan', 'CS');
+INSERT INTO ds_truong VALUES ('79777505', 'THCSCL Bình Tân', '173/171 Đường An Dương Vương KP4P.An LạcTPHCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Tan', 'CS');
+INSERT INTO ds_truong VALUES ('79777506', 'THCSCL Lê Tấn Bê', 'Đường Số 2d Khu Phố 3phường An Lạc quận Bình Tân Tp.HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Tan', 'CS');
+INSERT INTO ds_truong VALUES ('79777507', 'THCSCL Tân Tạo', '68 Hồ Văn Long KP4', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Tan', 'CS');
+INSERT INTO ds_truong VALUES ('79777508', 'THCS Bình Trị Đông A', '160A Mã Lò Khu phố 2 Phường Bình Trị Đông A Quận Bình Tân TP HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Tan', 'CS');
+INSERT INTO ds_truong VALUES ('79777509', 'THCSCL Lý Thường Kiệt', '33 Trương Phước Phan', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Tan', 'CS');
+INSERT INTO ds_truong VALUES ('79777510', 'THCSCL Trần Quốc Toản', '76 Kênh Nước Đen KP5 Phường Bình Hưng Hòa A Q. Bình Tân TP.HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Tan', 'CS');
+INSERT INTO ds_truong VALUES ('79777511', 'THCSCL Huỳnh Văn Nghệ', '89đường số 3 khu phố 4', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Tan', 'CS');
+INSERT INTO ds_truong VALUES ('79777512', 'THCSCL Nguyễn Trãi', '140 đường số 18', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Tan', 'CS');
+INSERT INTO ds_truong VALUES ('79777513', 'THCSCL Tân Tạo A', '4449/8 Đường Nguyễn Cửu Phú Phường Tân Tạo A Quận Bình Tân Tp. Hồ Chí Minh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Tan', 'CS');
+INSERT INTO ds_truong VALUES ('79777514', 'TH THCS và THPT Trí Tuệ Việt', '79 đường số 3 KDC Vĩnh Lộc Bình Hưng Hòa B.', 'Tu thuc', 'Dan toc ban tru', 'Phong GDDT Binh Tan', 'CS');
+INSERT INTO ds_truong VALUES ('79778501', 'THCS Trần Quốc Tuấn', '16/1 khu phố 1 Bế Văn Cấm', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 7', 'CS');
+INSERT INTO ds_truong VALUES ('79778502', 'THCS Huỳnh Tấn Phát', '488 Huỳnh Tấn Phát', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 7', 'CS');
+INSERT INTO ds_truong VALUES ('79778503', 'THCS Nguyễn Hữu Thọ', '62 Lâm Văn Bền Kp4 Phường Tân KiểngQuận 7TP Hồ Chí Minh', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 7', 'CS');
+INSERT INTO ds_truong VALUES ('79778504', 'THCS Nguyễn Hiền', '66 đường 1 Kp3', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 7', 'CS');
+INSERT INTO ds_truong VALUES ('79778505', 'THCS Hoàng Quốc Việt', 'D29 đường số 3 KDC Vạn Phát Hưng', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 7', 'CS');
+INSERT INTO ds_truong VALUES ('79778506', 'THCS Nguyễn Thị Thập', '411/3 Nguyễn Thị Thập', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 7', 'CS');
+INSERT INTO ds_truong VALUES ('79778507', 'THCS Phạm Hữu Lầu', 'Khu Tái định cư Phú Mỹ', 'Cong lap', 'Truong pho thong', 'Phong GDDT quan 7', 'CS');
+INSERT INTO ds_truong VALUES ('79783501', 'THCS Tân Phú Trung', 'Số 4 Đường 77 ấp Đình', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS');
+INSERT INTO ds_truong VALUES ('79783502', 'THCS Tân Thông Hội', 'Đường 28 Ấp Hậu', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS');
+INSERT INTO ds_truong VALUES ('79783503', 'THCS Tân Tiến', 'Số 41 đường 27  Ấp Tân Tiến', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS');
+INSERT INTO ds_truong VALUES ('79783504', 'THCS Thị Trấn', '629 QL22 KP5 Thị Trấn Củ Chi Củ Chi', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS');
+INSERT INTO ds_truong VALUES ('79783505', 'THCS Thị Trấn 2', 'Lê Vĩnh Huy Khu phố 7', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS');
+INSERT INTO ds_truong VALUES ('79783506', 'THCS Phước Vĩnh An', 'Ấp 5', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS');
+INSERT INTO ds_truong VALUES ('79783507', 'THCS Phước Hiệp', 'Ấp Cây trôm Xã Phước Hiệp Huyện Củ Chi', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS');
+INSERT INTO ds_truong VALUES ('79783508', 'THCS Phước Thạnh', 'Tỉnh lộ 7 Ấp Phước An xã Phước Thạnh huyện Củ Chi', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS');
+INSERT INTO ds_truong VALUES ('79783509', 'THCS Nguyễn Văn Xơ', 'Ấp Bình Thượng 1 Thái Mỹ Củ Chi', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS');
+INSERT INTO ds_truong VALUES ('79783510', 'THCS Trung Lập Hạ', 'Ấp Xóm Mới Xã Trung Lập Hạ Huyện Củ Chi TP.HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS');
+INSERT INTO ds_truong VALUES ('79783511', 'THCS Trung Lập', 'Ấp Trung Bình', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS');
+INSERT INTO ds_truong VALUES ('79783512', 'THCS An Nhơn Tây', 'Ấp Xóm Trại', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS');
+INSERT INTO ds_truong VALUES ('79783513', 'THCS An Phú', 'Ấp Phú Bình Xã An Phú Huyện Củ Chi Tp. HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS');
+INSERT INTO ds_truong VALUES ('79783514', 'THCS Nhuận Đức', 'Ấp Ngã Tư xã Nhuận Đức huyện Củ Chi', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS');
+INSERT INTO ds_truong VALUES ('79783515', 'THCS Phạm Văn Cội', 'Số 317 Đường Bùi Thị Điệt Ấp 3', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS');
+INSERT INTO ds_truong VALUES ('79783516', 'THCS Phú Hòa Đông', 'Số 35 Nguyễn Thị Nê Ấp Phú Hòa', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS');
+INSERT INTO ds_truong VALUES ('79783518', 'THCS Tân Thạnh Đông', 'Ấp 7', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS');
+INSERT INTO ds_truong VALUES ('79783519', 'THCS Bình Hòa', 'Ấp 4B', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS');
+INSERT INTO ds_truong VALUES ('79783520', 'THCS Phú Mỹ Hưng', 'Số 16đường Phú ThuậnẤp Phú Lợi xã Phú Mỹ Hưng huyện Củ Chi TPHCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS');
+INSERT INTO ds_truong VALUES ('79783521', 'THCS Hòa Phú', 'Số 1650 Tỉnh lộ 8 Ấp 1', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS');
+INSERT INTO ds_truong VALUES ('79783522', 'THCS Tân An Hội', 'Ấp Mũi Lớn 1 Huyện Củ Chi', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS');
+INSERT INTO ds_truong VALUES ('79783523', 'THCS Tân Thạnh Tây', 'Ấp 2 - Xã Tân Thạnh Tây - Huyện Củ Chi', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS');
+INSERT INTO ds_truong VALUES ('79783524', 'THCS Trung An', 'Ấp An Bình', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS');
+INSERT INTO ds_truong VALUES ('79783600', 'TH-THCS Tân Trung', '1310 Tỉnh Lộ 8 xã Tân Thạnh Đông Huyện Củ Chi', 'Cong lap', 'Truong pho thong', 'Phong GDDT Cu Chi', 'CS');
+INSERT INTO ds_truong VALUES ('79784501', 'THCS Nguyễn An Khương', '66/6 Đường Lê Thị Hồng GấmTổ 32 Khu Phố 3 Thị Trấn Hóc Môn Huyện Hóc Môn', 'Cong lap', 'Truong pho thong', 'Phong GDDT Hoc Mon', 'CS');
+INSERT INTO ds_truong VALUES ('79784502', 'THCS THỊ TRẤN', '23 Đường Lê Thị Hà KP8 Thị Trấn Hóc Môn Huyện Hóc Môn', 'Cong lap', 'Truong pho thong', 'Phong GDDT Hoc Mon', 'CS');
+INSERT INTO ds_truong VALUES ('79784503', 'THCS TAM ĐÔNG 1', '636 đường Trịnh Thị Miếng ấp Trung Đông 1 xã Thới Tam Thôn huyện Hóc Môn', 'Cong lap', 'Truong pho thong', 'Phong GDDT Hoc Mon', 'CS');
+INSERT INTO ds_truong VALUES ('79784504', 'THCS LÝ CHÍNH THẮNG 1', '5/5 đường Nguyễn Thị Nuôi ấp Dân Thắng 2 xã Tân Thới Nhì', 'Cong lap', 'Truong pho thong', 'Phong GDDT Hoc Mon', 'CS');
+INSERT INTO ds_truong VALUES ('79784505', 'THCS TRUNG MỸ TÂY 1', 'số 3A đường Nguyễn Ảnh Thủ ấp Mỹ Huề xã Trung Chánh huyện Hóc Môn', 'Cong lap', 'Truong pho thong', 'Phong GDDT Hoc Mon', 'CS');
+INSERT INTO ds_truong VALUES ('79784506', 'THCS ĐÔNG THẠNH', 'Số 18 Đường Nguyễn Thị Điệp ấp 1 Đông Thạnh Hóc Môn', 'Cong lap', 'Truong pho thong', 'Phong GDDT Hoc Mon', 'CS');
+INSERT INTO ds_truong VALUES ('79784507', 'THCS NGUYỄN HỒNG ĐÀO', '228/2D đường Nguyễn Văn Bứa Ấp 6 xã Xuân Thới Sơn huyện Hóc Môn', 'Cong lap', 'Truong pho thong', 'Phong GDDT Hoc Mon', 'CS');
+INSERT INTO ds_truong VALUES ('79784508', 'THCS ĐẶNG CÔNG BỈNH', 'Đường Bùi Công Trừng Ấp 3 Xã Nhị Bình Huyện Hóc Môn', 'Cong lap', 'Truong pho thong', 'Phong GDDT Hoc Mon', 'CS');
+INSERT INTO ds_truong VALUES ('79784509', 'THCS ĐỖ VĂN DẬY', '8 đường Huỳnh Thị Mài ấp Thới Tây 1xã Tân Hiệphuyện Hóc Môn thành phố Hồ Chí Minh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Hoc Mon', 'CS');
+INSERT INTO ds_truong VALUES ('79784510', 'THCS PHAN CÔNG HỚN', '18/6 đường Nguyễn Ảnh Thủ Ấp Trung Lân xã Bà Điểm Huyện Hóc Môn.', 'Cong lap', 'Truong pho thong', 'Phong GDDT Hoc Mon', 'CS');
+INSERT INTO ds_truong VALUES ('79784511', 'THCS TÂN XUÂN', '01 Quốc lộ 22 Ấp Tân Tiến xã Xuân Thới Đông Huyện Hóc Môn.', 'Cong lap', 'Truong pho thong', 'Phong GDDT Hoc Mon', 'CS');
+INSERT INTO ds_truong VALUES ('79784512', 'THCS Xuân Thới Thượng', 'số 35 đường Phan Văn Hớn Ấp 4 xã Xuân Thới Thượng huyện Hóc Môn', 'Cong lap', 'Truong pho thong', 'Phong GDDT Hoc Mon', 'CS');
+INSERT INTO ds_truong VALUES ('79784513', 'THCS TÔ KÝ', 'Số 12 đường Tô Ký 12 Ấp Chánh 1 xã Tân Xuân huyện Hóc Môn TP HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Hoc Mon', 'CS');
+INSERT INTO ds_truong VALUES ('79784514', 'THCS NGUYỄN VĂN BỨA', 'Khong co', 'Cong lap', 'Truong pho thong', 'Phong GDDT Hoc Mon', 'CS');
+INSERT INTO ds_truong VALUES ('79785501', 'THCS Nguyễn Thái Bình', 'Số 9 A Đường Số 2 KDC Bình Hưng xã Bình Hưng huyện Bình Chánh Tp. HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS');
+INSERT INTO ds_truong VALUES ('79785502', 'THCS Phong Phú', 'Đường N18 KDC PHONG PHÚ 4
+ẤP 3 XÃ PHONG PHÚ HUYỆN BÌNH CHÁNH', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS');
+INSERT INTO ds_truong VALUES ('79785503', 'THCS Qui Đức', 'B10/21 Đoàn Nguyễn Tuấn xã Qui Đức Huyện Bình Chánh Thành phố Hồ Chí Minh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS');
+INSERT INTO ds_truong VALUES ('79785504', 'THCS Hưng Long', 'Ấp 3 Hưng Long', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS');
+INSERT INTO ds_truong VALUES ('79785505', 'THCS Tân Quý Tây', '16/18C ấp 4 xâ Tân Quý Tây huyện Bình Chánh Tp. Hồ Chí Minh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS');
+INSERT INTO ds_truong VALUES ('79785506', 'THCS Nguyễn Văn Linh', 'KDC An Phú Tây Ấp 2 xã An Phú Tây huyện Bình Chánh TpHCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS');
+INSERT INTO ds_truong VALUES ('79785507', 'THCS Bình Chánh', 'B15/8 Quốc lộ 1Aấp 2', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS');
+INSERT INTO ds_truong VALUES ('79785508', 'THCS Tân Túc', 'C1/3 Bùi Thanh KhiếtKhu phố 3 Thị Trấn Tuân Túc Huyện Bình Chánh Tp.HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS');
+INSERT INTO ds_truong VALUES ('79785509', 'THCS Tân Kiên', 'D9/13D Đường Dương Đình Cúc Ấp 4 Xã Tân Kiên Huyện Bình Chánh Tp. Hồ Chí Minh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS');
+INSERT INTO ds_truong VALUES ('79785510', 'THCS Phạm Văn Hai', '3a28 Tỉnh Lộ 10 Ấp 3', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS');
+INSERT INTO ds_truong VALUES ('79785511', 'THCS Gò Xoài', 'B2/317A Ấp 2 xã Bình Lợi Huyện Bình Chánh Tphcm', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS');
+INSERT INTO ds_truong VALUES ('79785512', 'THCS Lê Minh Xuân', 'G8/1 Ấp 7 Lê Minh Xuân Huyện BÌnh Chánh TP.HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS');
+INSERT INTO ds_truong VALUES ('79785514', 'THCS Đồng Đen', 'F7/33 Ấp 6 Đường Quách Điêu Vĩnh Lộc A Bình Chánh TP HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS');
+INSERT INTO ds_truong VALUES ('79785515', 'THCS Vĩnh Lộc A', 'F7/31 Ấp 6 xã Vĩnh Lộc A huyện Bình Chánh Thành phố Hồ Chí Minh.', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS');
+INSERT INTO ds_truong VALUES ('79785516', 'THCS Vĩnh Lộc B', 'F6/40 Ấp 6 A đường Lại Hùng Cường Xã Vĩnh Lộc B Huyện Bình Chánh TPHCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS');
+INSERT INTO ds_truong VALUES ('79785517', 'THCS Đa Phước', 'A3/99 Quốc lộ 50 xã Đa Phước Huyện Bình chánh TPHCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS');
+INSERT INTO ds_truong VALUES ('79785518', 'THCS Tân Nhựt', 'E10/207B Ấp 6 Tân Nhựt', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS');
+INSERT INTO ds_truong VALUES ('79785519', 'THCS Võ Văn Vân', 'Khu dân cư Vĩnh Lộc B Ấp 1 xã Vĩnh Lộc B huyện Bình Chánh Tp.Hồ Chí Minh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS');
+INSERT INTO ds_truong VALUES ('79785601', 'TiH - THCS Thế Giới Trẻ Em(TH)', 'Số 29 đường số 3 KDC Trung Sơn', 'Tu thuc', 'Truong pho thong', 'Phong GDDT Binh Chanh', 'CS');
+INSERT INTO ds_truong VALUES ('79786501', 'THCS Nguyễn Bỉnh Khiêm', '421 Huỳnh Tấn Phát KP7 TTNB', 'Cong lap', 'Truong pho thong', 'Phong GDDT Nha Be', 'CS');
+INSERT INTO ds_truong VALUES ('79786502', 'THCS Lê Văn Hưu', '2596/20A Huỳnh Tấn Phát Xã Phú Xuân Huyện Nhà Bè TPHCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Nha Be', 'CS');
+INSERT INTO ds_truong VALUES ('79786503', 'THCS Hiệp Phước', '1154 Nguyễn Văn Tạo Ấp 3', 'Cong lap', 'Truong pho thong', 'Phong GDDT Nha Be', 'CS');
+INSERT INTO ds_truong VALUES ('79786504', 'THCS Nguyễn Văn Quỳ', '146A Lê Văn Lương Ấp 1', 'Cong lap', 'Truong pho thong', 'Phong GDDT Nha Be', 'CS');
+INSERT INTO ds_truong VALUES ('79786505', 'THCS Hai Bà Trưng', 'Ấp 2 xã  Nhơn Đức', 'Cong lap', 'Truong pho thong', 'Phong GDDT Nha Be', 'CS');
+INSERT INTO ds_truong VALUES ('79786506', 'THCS Phước Lộc', '423/2 Đào Sư Tích Ấp 3 Xã Phước Lộc', 'Cong lap', 'Truong pho thong', 'Phong GDDT Nha Be', 'CS');
+INSERT INTO ds_truong VALUES ('79786507', 'THCS Lê Thành Công', '63 đường Đào Sư Tích Ấp 3 xã Phước Kiển huyện Nhà Bè TP.HCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Nha Be', 'CS');
+INSERT INTO ds_truong VALUES ('79786508', 'THCS Nguyễn Thị Hương', 'Khong co', 'Cong lap', 'Truong pho thong', 'Phong GDDT Nha Be', 'CS');
+INSERT INTO ds_truong VALUES ('79787501', 'THCS An Thới Đông', 'Đường An Thới Đông-Ấp An Đông- xã An Thới Đông', 'Cong lap', 'Truong pho thong', 'Phong GDDT Can Gio', 'CS');
+INSERT INTO ds_truong VALUES ('79787502', 'TRƯỜNG THCS LONG HÒA', 'Đường Duyên HảiẤp Long ThạnhXã Long Hòa Huyện Cần Giờ Tp.Hồ Chí Minh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Can Gio', 'CS');
+INSERT INTO ds_truong VALUES ('79787503', 'THCS Lý Nhơn', 'Ấp Lý Thái Bửu - Xã Lý Nhơn - Huyện Cần Giờ - TP .Hồ Chí MInh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Can Gio', 'CS');
+INSERT INTO ds_truong VALUES ('79787504', 'THCS Tam Thôn Hiệp', 'Ấp An Lộc-Xã Tam Thôn Hiệp-Huyện Cần Giờ-TP.Hồ Chí Minh.', 'Cong lap', 'Truong pho thong', 'Phong GDDT Can Gio', 'CS');
+INSERT INTO ds_truong VALUES ('79787506', 'THCS Bình Khánh', 'Đường Rừng SátẤp Bình An Xã Bình Khánh', 'Cong lap', 'Truong pho thong', 'Phong GDDT Can Gio', 'CS');
+INSERT INTO ds_truong VALUES ('79787507', 'THCS Cần Thạnh', 'Đường Lương Văn Nho- Khu phố Giồng Ao-Thị Trấn Cần Thạnh-Huyện Cần giờ-TPHCM', 'Cong lap', 'Truong pho thong', 'Phong GDDT Can Gio', 'CS');
+INSERT INTO ds_truong VALUES ('79787508', 'THCS Doi Lầu', 'Ấp Lý Hòa Hiệp xã Lý Nhơn Huyện Cần Giờ Tp Hồ Chí Minh.', 'Cong lap', 'Truong pho thong', 'Phong GDDT Can Gio', 'CS');
