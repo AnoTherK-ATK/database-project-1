@@ -1,3 +1,4 @@
+USE truonghoc;
 INSERT INTO cap VALUES ('TX', 'Giáo dục thường xuyên');
 INSERT INTO cap VALUES ('MN', 'Mầm non');
 INSERT INTO cap VALUES ('TH', 'Tiểu học');

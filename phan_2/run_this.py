@@ -18,40 +18,42 @@ th = pd.read_excel("data/data_th.xlsx")
 thcs = pd.read_excel("data/data_thcs.xlsx")
 thpt = pd.read_excel("data/data_thpt.xlsx")
 
+#create dictionary
+dcap = {}
+dlh = {}
+dlt = {}
+dpgd = {}
+#null data
 def xx(leng):
     ans = ""
     for i in range(leng):
         ans += "X"
     return ans
 
-def inslk(a, f, table, leng):
+#insert all the table
+def inslk(a, f, table, leng, d):
     for index, row in a.iterrows():
-        # ma = unidecode(str(row["ma_" + table]))
-        # print(ma)
-        # ten = unidecode(str(row["ten_" + table]))
-        
         ma = str(row["ma_" + table])
         ten = str(row["ten_" + table])
-        
         if(ten == "nan"):
             ten = "NULL"
+        d[ten] = ma
         f.write("INSERT INTO " + table + " VALUES (" + "'" + ma + "'" + ", '" + ten + "');\n")
 
+#insert lookup table
 def lookup():
     f = open("data/lookup.sql", "w", encoding = "utf-8")
-    inslk(lk_cap, f, "cap", 2)
-    inslk(lk_lt, f, "lt", 6)
-    inslk(lk_lh, f, "lh", 5)
-    inslk(lk_pgd, f, "pgd", 3)
+    f.write("USE truonghoc;\n")
+    inslk(lk_cap, f, "cap", 2, dcap)
+    inslk(lk_lt, f, "lt", 6, dlt)
+    inslk(lk_lh, f, "lh", 5, dlh)
+    inslk(lk_pgd, f, "pgd", 3, dpgd)
 
+#insert to main table
 def ins(arr, name, cap):
     with open("data/" + name + ".sql", "w", encoding="utf-8") as f:
         f.write("USE truonghoc;\n")
         for index, row in arr.iterrows():
-            # ma = unidecode(str(row["ma_truong"]))
-            # ten = unidecode(str(row["ten_truong"]))
-            # dc = unidecode(str(row["dia_chi"]))
-            
             ma = str(row["ma_truong"])
             ten = str(row["ten_truong"])
             dc = str(row["dia_chi"])
@@ -61,14 +63,16 @@ def ins(arr, name, cap):
             lh = unidecode(str(row["loai_hinh"]))
             if(lh == "nan"):
                 lh = xx(5)
+            lh = dlh[lh]
             lt = unidecode(str(row["loai_truong"]))
             if(lt == "nan"):
                 lt = xx(6)
+            lt = dlt[lt]
             pgd = unidecode(str(row["phong_gd"]))
             if(pgd == "nan"):
                 pgd = xx(3)
+            pgd = dpgd[pgd]
             f.write("INSERT INTO ds_truong VALUES ('{}', '{}', '{}', '{}', '{}', '{}', '{}');\n".format(ma, ten, dc, lh, lt, pgd, cap))
-            # f.write("NHỮNG CHỮ CÓ DẤU")
 
 lookup() 
 ins(gdtx, "gdtx", "TX")
