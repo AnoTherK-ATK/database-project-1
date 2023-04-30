@@ -1,0 +1,22 @@
+mysql -u root -p < S:/it004/da1/phan_1b/CreateSchema.sql
+1234
+mysql -u root -p < S:/it004/da1/phan_2/data/lookup.sql
+1234
+mysql -u root -p < S:/it004/da1/phan_2/data/gdtx.sql
+1234
+mysql -u root -p < S:/it004/da1/phan_2/data/mn.sql
+1234
+mysql -u root -p < S:/it004/da1/phan_2/data/th.sql
+1234
+mysql -u root -p < S:/it004/da1/phan_2/data/thcs.sql
+1234
+mysql -u root -p < S:/it004/da1/phan_2/data/thpt.sql
+1234
+
+source S:/it004/da1/phan_1b/CreateSchema.sql
+source S:/it004/da1/phan_2/data/lookup.sql
+source S:/it004/da1/phan_2/data/gdtx.sql
+source S:/it004/da1/phan_2/data/mn.sql
+source S:/it004/da1/phan_2/data/th.sql
+source S:/it004/da1/phan_2/data/thcs.sql
+source S:/it004/da1/phan_2/data/thpt.sql

@@ -480,7 +480,6 @@ INSERT INTO ds_truong VALUES ("79784423", "TH XUÂN THỚI THƯỢNG", "10 đư�
 INSERT INTO ds_truong VALUES ("79784424", "TH Trần Văn Mười", "70 đường Trần Văn Mười ấp Xuân Thới Đông 3 xã Xuân Thới Đông huyện Hóc Môn", "COLAP", "PTHONG", "HMN", "TH");
 INSERT INTO ds_truong VALUES ("79784425", "TH TRẦN VĂN DANH", "11A đường Đặng Thúc Vịnh Ấp 7 xã Đông Thạnh huyện Hóc Môn.", "COLAP", "PTHONG", "HMN", "TH");
 INSERT INTO ds_truong VALUES ("79784426", "NGUYỄN THỊ NUÔI", "402 Tô Ký ấp Tam Đông 1 xã Thới Tam Thôn huyện Hóc Môn.", "COLAP", "PTHONG", "HMN", "TH");
-INSERT INTO ds_truong VALUES ("79784WD5", "LMG THỎ HỒNG", "4/4C đường Xuân Thới Sơn 31A Ấp 3 xã Xuân Thới Sơn huyện Hóc Môn Tp.HCM", "TTHUC", "PTHONG", "HMN", "TH");
 INSERT INTO ds_truong VALUES ("79785401", "TH Bình Hưng", "3a Đường Số 10  Kdc Bình Hưng", "COLAP", "PTHONG", "BCH", "TH");
 INSERT INTO ds_truong VALUES ("79785402", "TH Võ Văn Vân", "Ấp 1 xã Phạm Văn Hai", "COLAP", "PTHONG", "BCH", "TH");
 INSERT INTO ds_truong VALUES ("79785403", "TH Phong Phú", "QL50 Ấp 2xã Phong Phú huyện Bình Chánh", "COLAP", "PTHONG", "BCH", "TH");
